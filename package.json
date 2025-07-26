@@ -10,6 +10,11 @@
     "type": "git",
     "url": "git+https://github.com/Anna2127uwu/Videojuegos.git"
   },
+  "keywords": [
+    "SASS",
+    "NMP",
+    "Gulp"
+  ],
   "author": "Anna Paulina Y Eduardo Piña",
   "license": "ISC",
   "bugs": {
@@ -18,6 +23,7 @@
   "homepage": "https://github.com/Anna2127uwu/Videojuegos#readme",
   "devDependencies": {
     "gulp": "^5.0.1",
+    "gulp-sass": "^6.0.1",
     "sass": "^1.89.2"
   }
 }
