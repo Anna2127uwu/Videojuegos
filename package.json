@@ -1,0 +1,23 @@
+{
+  "name": "videojuegos",
+  "version": "1.0.0",
+  "description": "Pagina de videojuegos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anna2127uwu/Videojuegos.git"
+  },
+  "author": "Anna Paulina Y Eduardo Piña",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anna2127uwu/Videojuegos/issues"
+  },
+  "homepage": "https://github.com/Anna2127uwu/Videojuegos#readme",
+  "devDependencies": {
+    "gulp": "^5.0.1",
+    "sass": "^1.89.2"
+  }
+}
