@@ -4,7 +4,8 @@
   "description": "Pagina de videojuegos",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass src/scss:dist/css",
+    "dev": "gulp dev"
   },
   "repository": {
     "type": "git",
