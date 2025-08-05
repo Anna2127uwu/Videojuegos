@@ -2,6 +2,7 @@
   "name": "videojuegos",
   "version": "1.0.0",
   "description": "Pagina de videojuegos",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "sass": "sass src/scss:dist/css",
