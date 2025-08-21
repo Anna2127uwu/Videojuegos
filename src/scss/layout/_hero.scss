@@ -1,7 +1,8 @@
+@use 'base/variables' as v; 
 
 .hero{
     margin: 50px;
-    background-color: gray;
+    background-color: v.$fondoHero;
     height: 95vh;
     .descripcion{
         display: flex;
