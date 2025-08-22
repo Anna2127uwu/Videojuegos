@@ -1,0 +1,26 @@
+@use 'base/variables' as v;
+.menu{
+    background-color: v.$efectoSecciones ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;   
+    padding: 1rem;
+    margin: 1rem;
+    a{
+        color: v.$colorEnlaces;
+        font-size: 20px;
+        svg{
+            width: 30px;
+            height: 30px;
+        }
+        &:hover{
+            text-decoration: underline;
+        }
+        img{
+            width: 100px;
+            height: 10vh;
+        }
+    }
+}

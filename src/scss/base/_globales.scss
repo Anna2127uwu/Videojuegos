@@ -1,5 +1,12 @@
+@use 'variables' as v;
 a{
     text-decoration: none;
+    font-family: v.$fuentePrincipal;
+}
+p{
+    color: v.$colorEnlaces;
+    font-size: 20px;
+    font-family: v.$fuentePrincipal;
 }
 /* Diseño de botones */
 .btn{
@@ -9,4 +16,12 @@ a{
     text-align: center;
     font-weight: 600;
     cursor: pointer;
+    background-color: v.$fondoBtns;
+}
+body{
+    background: linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, rgba(72, 39, 89, 1) 100%);
+}
+h1,h2,h3,h4,h5,h6{
+    color: v.$colorEnlaces;
+    font-family: v.$fuenteSubitulos;
 }

@@ -1,9 +1,20 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Press+Start+2P&family=VT323&display=swap');
+
 //colores de la pagina
-$fondo: #ffff;
+$fondo: linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, rgba(72, 39, 89, 1) 100%);
 $fondoHero: #482759;
 $fondoSecciones: #000000;
+$efectoSecciones: rgba(182, 54, 135, 0.141) ;
 $fondoPie: #1800ad;
 $fondoBtns: #c1ff72;
+$colorEnlaces: #fff;
+
+//Fuentes 
+$fuenteTitulos: 'Press Start 2P', sans-seri;
+$fuenteSubitulos: 'VT323', sans-seri;
+$fuentePrincipal: 'Fredoka', sans-seri;
+
 
 
 
