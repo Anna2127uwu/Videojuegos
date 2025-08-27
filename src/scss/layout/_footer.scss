@@ -6,60 +6,33 @@
   font-family: v.$fuentePrincipal;
   padding: 2rem 4rem;
 
-  .footer-container {
+  /* TOP con logo + redes */
+  .footer-top {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-start;
-    gap: 2rem;
-
-    .footer-column {
-      flex: 1 1 180px;
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-
-      h3 {
-        font-size: 1.2rem;
-        margin-bottom: 0.5rem;
-        color: v.$fondoBtns;
-      }
-
-      ul {
-        list-style: none;
-        padding: 0;
-
-        li {
-          margin-bottom: 0.4rem;
-          font-size: 0.95rem;
-          cursor: pointer;
-
-          &:hover {
-            color: v.$fondoBtns;
-          }
-        }
-      }
-    }
+    align-items: center;
+    margin-bottom: 2rem;
 
     .footer-logo {
-      font-family: v.$fuenteTitulos;
-      font-size: 2rem;
-      margin-bottom: 1rem;
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #fff;
     }
 
     .social-icons {
       display: flex;
       gap: 1rem;
-      margin-bottom: 1rem;
 
-      .social-icon {
-        width: 30px;
-        height: 30px;
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
 
         img {
-          width: 100%;
+          width: 20px;
+          height: 20px;
           filter: grayscale(100%) brightness(200%);
-          transition: all 0.3s ease-in-out;
         }
 
         &:hover img {
@@ -67,9 +40,19 @@
         }
       }
     }
+  }
 
-    .customer-service {
+  /* Columnas */
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+
+    .footer-column {
       flex: 1 1 180px;
+      display: flex;
+      flex-direction: column;
 
       h3 {
         font-size: 1.2rem;
@@ -94,12 +77,18 @@
     }
   }
 
+  .customer-service {
+    flex: 1 1 180px;
+  }
+
+  /* Línea separadora */
   .linea-separadora {
     border: none;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     margin: 2rem 0;
   }
 
+  /* BOTTOM */
   .footer-bottom {
     display: flex;
     flex-direction: column;
@@ -107,21 +96,10 @@
     text-align: center;
     gap: 1rem;
 
-    img {
-      width: 50px;
-      height: auto;
-    }
-
     p {
       font-size: 0.8rem;
       color: rgba(255, 255, 255, 0.6);
       max-width: 900px;
     }
   }
-
-    .footer-container {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-  }
+}

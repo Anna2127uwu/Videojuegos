@@ -1,0 +1,126 @@
+@use 'base/variables' as v; 
+.noticias {
+  padding: 2rem 4rem;
+  background: v.$fondoSecciones;
+  color: v.$colorEnlaces;
+
+  h2 {
+     font-family: v.$fuenteTitulos;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .novedades {
+
+    /* Grid de noticias principales */
+    .noticias-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+
+      .noticia {
+        display: flex;
+        flex-direction: column;
+
+        .noticia-img {
+          position: relative;
+          width: 100%;
+
+          img {
+            width: 100%;
+            border-radius: 6px;
+            object-fit: cover;
+          }
+        }
+
+        .noticia-fecha {
+          margin-top: 0.8rem;
+          font-size: 0.75rem;
+          text-transform: uppercase;
+          color: v.$colorfechas;
+        }
+
+        .noticia-titulo {
+          margin: 0.5rem 0;
+          font-size: 1.1rem;
+          font-weight: bold;
+          line-height: 1.4;
+        }
+
+        .noticia-desc {
+          font-size: 0.95rem;
+          color: v.$colorEnlaces;
+          margin-bottom: 0.8rem;
+        }
+
+        .noticia-link {
+          font-size: 0.9rem;
+          font-weight: bold;
+          color: v.$colormasinfo;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    /* Línea separadora */
+    .linea-separadora {
+      border: none;
+      border-top: 1px solid v.$colorfechas;
+      margin: 2rem 0;
+    }
+
+    /* Noticia pequeña debajo */
+    .noticia-mini {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+
+      img {
+        width: 180px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 6px;
+      }
+
+      .mini-contenido {
+        flex: 1;
+
+        h4 {
+          font-size: 1rem;
+          font-weight: bold;
+          margin-bottom: 0.3rem;
+        }
+
+        .noticia-fecha {
+          font-size: 0.75rem;
+          text-transform: uppercase;
+          color: v.$colorfechas;
+          margin-bottom: 0.3rem;
+        }
+
+        .noticia-desc {
+          font-size: 0.9rem;
+          color: v.$colorEnlaces;
+          margin-bottom: 0.5rem;
+        }
+
+        .noticia-link {
+          font-size: 0.9rem;
+          font-weight: bold;
+          color: v.$colormasinfo;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+}
