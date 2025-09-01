@@ -16,7 +16,7 @@
     .footer-logo {
       font-size: 1.3rem;
       font-weight: bold;
-      color: #fff;
+      color: v.$colorEnlaces;
     }
 
     .social-icons {
@@ -98,7 +98,7 @@
 
     p {
       font-size: 0.8rem;
-      color: rgba(255, 255, 255, 0.6);
+      color: v.$colorfechas;
       max-width: 900px;
     }
   }
