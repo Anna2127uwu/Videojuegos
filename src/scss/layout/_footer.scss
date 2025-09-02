@@ -1,7 +1,7 @@
 @use 'base/variables' as v;
 
 .footer {
-  background: v.$fondoPie;
+  background: rgba(v.$fondoPie, 0.4);
   color: v.$colorEnlaces;
   font-family: v.$fuentePrincipal;
   padding: 2rem 4rem;
