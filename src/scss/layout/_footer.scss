@@ -30,9 +30,8 @@
         transition: all 0.3s ease;
 
         img {
-          width: 20px;
-          height: 20px;
-          filter: grayscale(100%) brightness(200%);
+          width: 40px;
+          height: 40px;
         }
 
         &:hover img {
@@ -84,7 +83,7 @@
   /* Línea separadora */
   .linea-separadora {
     border: none;
-    border-top: 1px v.$colorfechas;
+    border-top: 1px v.$colorfechas solid;
     margin: 2rem 0;
   }
 
