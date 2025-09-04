@@ -20,42 +20,102 @@
         <a href="#">Noticias</a>
     </nav>
 
-    <!-- Creando hero -->
-    <section class="hero">
-        <div class="contenedor">
+    <!-- Hero Dinamico -->
+   <section class="hero">
+  <div class="hero-overlay">
+    <div class="hero-content">
+      <h1 id="hero-title">Pac-Man World Re-Pac</h1>
+      <p id="hero-desc">
+        Revive las aventuras clásicas de Pac-Man en una versión totalmente renovada.
+      </p>
+      <div class="hero-buttons">
+        <button class="btn">Comprar</button>
+        <button class="btn-outline">A lista de deseos</button>
+      </div>
+    </div>
+  </div>
 
-            <div class="descripcion">
-                <div class="info">
-                    <h1>Descripción</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consequatur quo minima facilis deleniti perferendis enim similique autem et voluptate, itaque laborum rerum sequi reiciendis molestiae maxime delectus ipsam obcaecati.
-                    Velit temporibus ullam possimus minima repudiandae fugiat adipisci ipsum! Pariatur nemo dicta eum harum dolorum rem omnis alias tenetur saepe facilis. Provident temporibus libero aliquam doloremque modi dolorum molestias nostrum.
-                    Dignissimos odio consequatur sint. Delectus in totam odit harum. </p>
-                    <div class="btn-hero">
-                        <button class="btn">
-                            Comprar
-                        </button>
-                        <button class="btn">
-                            Agregar a deseos
-                        </button>
-                </div>
-            </div>
-            </div>
-            <div class="cont-card-hero">
-                <div class="card-hero">
-                    <img src="../img/accion/marvel.webp" alt="">
-                </div>
-                <div class="card-hero">
-                    <img src="../img/accion/marvel.webp" alt="">
-                </div>
-                <div class="card-hero">
-                    <img src="../img/accion/marvel.webp" alt="">
-                </div>
-                <div class="card-hero">
-                    <img src="../img/accion/marvel.webp" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Cards Hero -->
+  <div class="hero-cards">
+    <div class="card"
+         data-title="Pac-Man World Re-Pac"
+         data-desc="Revive las aventuras clásicas de Pac-Man en una versión totalmente renovada."
+         data-bg="/Videojuegos/img/aventura/pacman.png">
+      <img src="/Videojuegos/img/aventura/pacman.png" alt="Pac-Man">
+    <div class="overlay">
+    <h3>Pac-Man World Re-Pac</h3>
+    <span class="hint">Ver más →</span>
+  </div>
+    </div>
+
+    <div class="card"
+         data-title="Sonic Superstars"
+         data-desc="Un regreso a las raíces de Sonic con un estilo moderno, niveles nuevos y multijugador para hasta 4 jugadores."
+         data-bg="/Videojuegos/img/aventura/sonic.webp">
+      <img src="/Videojuegos/img/aventura/sonic.webp" alt="Sonic Superstars">
+    <div class="overlay">
+    <h3>Sonic Superstars</h3>
+    <span class="hint">Ver más →</span>
+  </div>
+    </div>
+
+    <div class="card"
+         data-title="Halo Infinite"
+         data-desc="Regresa Master Chief para enfrentar a “The Banished” en el anillo Zeta Halo. Combina una campaña expansiva con competitivo gratuito y soporte de cross-play."
+         data-bg="/Videojuegos/img/accion/haloi.png">
+      <img src="/Videojuegos/img/accion/haloi.png" alt="Halo Infinite">
+    <div class="overlay">
+    <h3>Halo Infinite</h3>
+    <span class="hint">Ver más →</span>
+  </div>
+    </div>
+
+    <div class="card"
+         data-title="Gears of War: Reloaded"
+         data-desc="Remasterización del original de 2006, corrige el postureo a 4K y 120 fps, mantiene campaña cooperativa y multijugador 8v8."
+         data-bg="/Videojuegos/img/accion/gears.jpeg">
+      <img src="/Videojuegos/img/accion/gears.jpeg" alt="Gears of War: Reloaded">
+    <div class="overlay">
+    <h3>Gears of War: Reloaded</h3>
+    <span class="hint">Ver más →</span>
+  </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Hero dinámico con autoplay y clic en cards
+  const hero = document.querySelector(".hero");
+  const title = document.getElementById("hero-title");
+  const desc = document.getElementById("hero-desc");
+  const cards = document.querySelectorAll(".card");
+
+  let index = 0;
+  const changeHero = (card) => {
+    hero.style.backgroundImage = `url(${card.dataset.bg})`;
+    title.textContent = card.dataset.title;
+    desc.textContent = card.dataset.desc;
+  };
+
+  // Cambiar con clic
+  cards.forEach((card, i) => {
+    card.addEventListener("click", () => {
+      index = i;
+      changeHero(card);
+    });
+  });
+
+  // Autoplay cada 5s
+  setInterval(() => {
+    index = (index + 1) % cards.length;
+    changeHero(cards[index]);
+  }, 5000);
+
+  // Inicial
+  changeHero(cards[0]);
+</script>
+
+
 <!-- Seccion catalogo -->
     <section class="seccion-catalogo" id="catalogo">
         <div class="seccion-catalogo-div">
@@ -73,7 +133,7 @@
             <div class="card-catalogo">
                 <div class="contenedor">
                     <div class="cont-image">
-                        <img src="/Videojuegos/img/aventura/pacman.webp" alt="">
+                        <img src="/Videojuegos/img/aventura/pacman.png" alt="">
                     </div>
                     <div class="cont-info">
                         <p>Titulo</p>
@@ -158,11 +218,12 @@
       <article class="noticia">
         <div class="noticia-img">
           <img src="../img/noticias/noticia1.jpg" alt="Noticia principal 1">
-          <h4 class="noticia-titulo">Noticia principal 1</h4>
+          <h4 class="noticia-titulo">Hollow Rift: Echoes of the Void</h4>
         </div>
-        <p class="noticia-fecha">Hace 20D</p>
+        <p class="noticia-fecha-autor">23 de julio de 2025
+        <br>POR: @PixelHeroMx </p>
         <p class="noticia-desc">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+¡El juego de acción y exploración espacial Hollow Rift: Echoes of the Void ha sorprendido a todos con su demo liberada hoy en Steam! Desarrollado por el estudio indie mexicano NebulaForge, el título mezcla narrativa profunda, física cuántica y combates al estilo soulslike. Según los desarrolladores, el juego tendrá soporte para mods desde el primer día, además de crossplay entre PC y Xbox.
         </p>
         <a href="#" class="noticia-link">Más información</a>
       </article>
@@ -170,12 +231,13 @@
       <!-- Noticia 2 -->
       <article class="noticia">
         <div class="noticia-img">
-          <img src="../img/noticias/marveltokon.webp" alt="Noticia principal 2">
-          <h4 class="noticia-titulo">Noticia principal 2</h4>
+          <img src="../img/noticias/noticia2.jpg" alt="Noticia principal 2">
+          <h4 class="noticia-titulo">Zelda: Spirits of the Wild</h4>
         </div>
-        <p class="noticia-fecha">Hace 20D</p>
+        <p class="noticia-fecha-autor">24 de julio de 2025
+        <br>POR: @NaviNoticias</p>
         <p class="noticia-desc">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Durante el Nintendo Direct de hoy, se anunció el esperado Zelda: Spirits of the Wild, secuela de Tears of the Kingdom. El juego traerá una mecánica revolucionaria de "espíritus ancestrales" que permiten a Link controlar elementos del entorno con precisión quirúrgica. Además, por primera vez en la saga, incluirá un modo cooperativo local y en línea. ¡El lanzamiento será mundial este noviembre!
         </p>
         <a href="#" class="noticia-link">Más información</a>
       </article>
@@ -188,15 +250,54 @@
     <div class="noticia-mini">
       <img src="../img/noticias/clair.png" alt="Noticia 3">
       <div class="mini-contenido">
-        <h4>Noticia principal 3</h4>
-        <p class="noticia-fecha">Hace 20D</p>
+        <h4>Marvel Tōkon: Fighting Souls</h4>
+        <p class="noticia-fecha-autor">4 de junio de 2025
+        <br>POR: @GamerEnLlamas </p>
         <p class="noticia-desc">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit.
-        </p>
+En el reciente State of Play de Sony, se reveló Marvel Tōkon: Fighting Souls, el nuevo juego de lucha por equipos desarrollado por Arc System Works (creadores de Guilty Gear y Dragon Ball FighterZ) junto con Marvel Games. Aunque es un título inspirado en Marvel vs. Capcom, introduce una mecánica única de equipos 4 vs 4, donde solo un luchador activo y tres asistentes comparten una barra de salud de equipo. La estética combina gráficos 3D con una sensibilidad estilo anime.
+</p>
         <a href="#" class="noticia-link">Más información</a>
       </div>
     </div>
 
+     <div class="noticia-mini">
+      <img src="../img/noticias/clair.png" alt="Noticia 4">
+      <div class="mini-contenido">
+        <h4>Kingdom Come: Deliverance II</h4>
+        <p class="noticia-fecha-autor">4 de febrero de 2025
+        <br>POR: @RPGNoticiasMX </p>
+        <p class="noticia-desc">
+El esperado Kingdom Come: Deliverance II, la secuela del exitoso RPG medieval de Warhorse Studios, fue lanzado el 4 de febrero de 2025 para PC, PlayStation 5 y Xbox Series X/S. El juego continúa la historia de Henry en un mundo abierto fiel a la historia.
+</p>        
+<a href="#" class="noticia-link">Más información</a>
+      </div>
+    </div>
+
+<div class="noticia-mini">
+      <img src="../img/noticias/clair.png" alt="Noticia 5">
+      <div class="mini-contenido">
+        <h4>Clair Obscur: Expedition 33</h4>
+        <p class="noticia-fecha-autor">24 de abril de 2025
+        <br>POR: @RPGFanCritico </p>
+        <p class="noticia-desc">
+El RPG Clair Obscur: Expedition 33, del estudio francés Sandfall Interactive, fue lanzado el 24 de abril de 2025. Recibió excelentes críticas por su mezcla entre combate por turnos reactivo, exploración estratégica y narrativa envolvente.
+</p>
+        <a href="#" class="noticia-link">Más información</a>
+      </div>
+    </div>
+
+<div class="noticia-mini">
+      <img src="../img/noticias/clair.png" alt="Noticia 6">
+      <div class="mini-contenido">
+        <h4>Tainted Grail: The Fall of Avalon</h4>
+        <p class="noticia-fecha-autor">23 de mayo de 2025
+        <br>POR: @ExploradorRPG</p>
+        <p class="noticia-desc">
+Tainted Grail: The Fall of Avalon, RPG de mundo abierto basado en la leyenda artúrica, se lanzó el 23 de mayo de 2025 para PS5, Xbox Series X/S y PC. Combina rol de acción, exploración libre y decisiones con impacto.
+</p>
+        <a href="#" class="noticia-link">Más información</a>
+      </div>
+    </div>
   </div>
 </section>
 <!-- Seccion Ofertas -->
@@ -291,28 +392,31 @@
 
 <div class="categoria-carrusel">
   <h2>Explorar por categoría</h2>
+
+  <!-- Botón izquierda -->
+  <a class="flecha prev" href="#item1">&#10094;</a>
+
   <div class="carrusel">
-    <button class="prev">&lt;</button>
-    <div class="carrusel-track">
-      <div class="carrusel-item">
-        <img src="../img/accion/doom.webp" alt="Accion">
-        <span>Accion</span>
-      </div>
-      <div class="carrusel-item">
-        <img src="../img/aventura/crash.webp" alt="Aventura">
-        <span>Aventura</span>
-      </div>
-      <div class="carrusel-item">
-        <img src="../img/rol/deltarune.png" alt="Rol">
-        <span>Rol</span>
-      </div>
-      <div class="carrusel-item">
-        <img src="../img/terror/No,I'mnotaHuman.png" alt="Terror">
-        <span>Terror</span>
-      </div>
+    <div class="carrusel-item" id="item1">
+      <img src="img1.jpg" alt="Juegos gratuitos">
+      <span>JUEGOS GRATUITOS</span>
     </div>
-    <button class="next">&gt;</button>
+    <div class="carrusel-item" id="item2">
+      <img src="img2.jpg" alt="Novelas visuales">
+      <span>NOVELAS VISUALES</span>
+    </div>
+    <div class="carrusel-item" id="item3">
+      <img src="img3.jpg" alt="Ciudades y asentamientos">
+      <span>CIUDADES Y ASENTAMIENTOS</span>
+    </div>
+    <div class="carrusel-item" id="item4">
+      <img src="img4.jpg" alt="Estrategia">
+      <span>ESTRATEGIA</span>
+    </div>
   </div>
+
+  <!-- Botón derecha -->
+  <a class="flecha next" href="#item4">&#10095;</a>
 </div>
 
  <!-- Footer -->

@@ -1,66 +1,106 @@
 @use 'base/variables' as v; 
 
 .categoria-carrusel {
+  position: relative;
+  padding: 2rem;
+  background: #0d0d0d;
+
   h2 {
-    color: v.$colorEnlaces;
-    margin-bottom: 1rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
   }
 
   .carrusel {
     display: flex;
-    align-items: center;
-    position: relative;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 1rem;
+    scroll-behavior: smooth;
 
-    .prev, .next {
-      background: none;
-      border: none;
-      font-size: 2rem;
-      color: v.$colorEnlaces;
-      cursor: pointer;
-      z-index: 10;
+    &::-webkit-scrollbar {
+      display: none;
     }
 
-    .carrusel-track {
-      display: flex;
-      gap: 1rem;
+    .carrusel-item {
+      position: relative;
+      flex: 0 0 220px;
+      height: 140px;
+      border-radius: 12px;
       overflow: hidden;
-      scroll-behavior: smooth;
+      scroll-snap-align: start;
+      cursor: pointer;
+      transition: transform 0.3s ease;
 
-      .carrusel-item {
-        position: relative;
-        flex: 0 0 auto;
-        width: 200px;
-        height: 120px;
-        border-radius: 10px;
-        overflow: hidden;
-        cursor: pointer;
-        transition: transform 0.3s;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to top, rgba(255, 115, 0, 0.9), rgba(255, 115, 0, 0.6));
+        transition: opacity 0.3s ease;
+      }
+
+      span {
+        position: absolute;
+        bottom: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+        font-size: 0.9rem;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 0.3rem 0.6rem;
+        border-radius: 6px;
+        z-index: 2;
+      }
+
+      &:hover {
+        transform: scale(1.05);
 
         img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          filter: brightness(50%);
-          transition: all 0.3s;
-        }
-
-        span {
-          position: absolute;
-          bottom: 0.5rem;
-          left: 50%;
-          transform: translateX(-50%);
-          color: v.$colorEnlaces;
-          font-weight: bold;
-          background-color: v.$fondoSecciones;
-          padding: 0.3rem 0.6rem;
-          border-radius: 5px;
-        }
-
-        &:hover img {
           transform: scale(1.1);
-          filter: brightness(100%);
+        }
+
+        &::before {
+          opacity: 0;
         }
       }
     }
   }
+
+  // Flechas
+  .flecha {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+    background: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    z-index: 5;
+    transition: background 0.3s;
+
+    &:hover {
+      background: rgba(255, 115, 0, 0.9);
+    }
+
+    &.prev {
+      left: 0.5rem;
+    }
+    &.next {
+      right: 0.5rem;
+    }
+  }
 }
+

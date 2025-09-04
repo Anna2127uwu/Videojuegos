@@ -73,8 +73,9 @@ p{
 
 
 body{
-    background: linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, rgba(72, 39, 89, 1) 100%);
+    background: v.$fondo;
 }
+
 h1,h2,h3,h4,h5,h6{
     color: v.$colorEnlaces;
     font-family: v.$fuenteSubtitulos;
