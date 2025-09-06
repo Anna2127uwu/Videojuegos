@@ -1,0 +1,19 @@
+[
+    {
+        "id": "1",
+        "nombre":"Pac-Man World Re-Pac",
+        "categoria": "Aventuras",
+        "clasificacion": "E",
+        "alt": "Imagen pacman",
+        "Plataformas": ["Xbox", "PlayStation", "Nintendo Switch", "PC"],
+        "Multijugador": "No",
+        "Precio": 744,
+        "descuento": 70,
+        "Fecha": "30 de junio de 2018",
+        "Desarrolladora" : "Now Production / Bandai Namco",
+        "Sinopsis": "Remake del clásico Pac-Man World de PS1. Pac-Man debe rescatar a su familia explorando mundos en 3D llenos de enemigos, rompecabezas y plataformas.",
+        "img" :"img/aventura/pacman.png",
+        "trailer": ""
+    }
+    
+]
