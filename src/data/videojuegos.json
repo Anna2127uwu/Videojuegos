@@ -29,7 +29,7 @@
         "Fecha": "17 de junio de 2011",
         "Desarrolladora" : "Spicy Horse Games",
         "Sinopsis": "Hace once años un pavoroso incendio acabó con la familia de Alicia y la dejó terriblemente trastornada. Más tarde fue internada en el Manicomio Rutledge, donde sufrió para hacer frente a sus demonios adentrándose aún más en su mundo de fantasía, el País de las Maravillas. Ahora, después de diez años, finalmente ha logrado asegurar su liberación. Pero aún carga con el gran daño psicológico de aquel trágico evento. Con su mente hecha jirones, es incapaz de enfrentarse al miedo provocado por sus extraños recuerdos, sueños y visiones. Quizás lo haga mejor en el País de las Maravillas. Siempre ha sido así. Suele viajar allí buscando lo que el mundo real no le puede proporcionar: seguridad, conocimiento y la verdad acerca del pasado. Pero durante su ausencia, el País de las Maravillas también ha sufrido lo suyo. Algo ha ido terriblemente mal y ahora una gran maldad se cierne sobre lo que antaño fuera su hermoso refugio. ¿Puede Alicia salvar al País de las Maravillas (y a ella misma) de la locura que los consume?",
-        "img" :"img/terror/alice",
+        "img" :"img/terror/alicemadnessreturns.webp",
         "trailer": "https://youtu.be/VR8wXsvUrBg?si=ScaRpRnOEcUc2gGV"
     },
 
@@ -46,7 +46,7 @@
         "Fecha": "14 de junio de 2016",
         "Desarrolladora" : "Behaviour Interactive Inc.",
         "Sinopsis": "Dead by Daylight es un juego de horror de multijugador (4 contra 1) en el que un jugador representa el rol del asesino despiadado y los 4 restantes juegan como supervivientes que intentan escapar de él para evitar ser capturados y asesinados.",
-        "img" :"img/terror/pacman.png",
+        "img" : "img/terror/deadbydaylight.webp",
         "trailer": "https://youtu.be/JGhIXLO3ul8?si=Qbo3D1sFK6duT8Kp"
     },
 
@@ -63,7 +63,7 @@
         "Fecha": "26 de febrero de 2025",
         "Desarrolladora" : "semiwork",
         "Sinopsis": "Un juego de horror en línea cooperativo para hasta 6 jugadores. Localiza objetos valiosos, completamente basados en física, y manipúlalos con cuidado mientras los recuperas y extraes para satisfacer los deseos de tu creador.",
-        "img" :"img/terror/pacman.png",
+        "img" :"img/terror/R.E.P.O..webp",
         "trailer": "https://youtu.be/0ais4U7UX14?si=aRTZM716m7052csm"
     }, 
 
@@ -80,7 +80,7 @@
         "Fecha": "26 de febrero de 2025",
         "Desarrolladora" : "Trioskaz",
         "Sinopsis": "ALERTA. Quédate adentro. Asegura tus puertas con llave. Cierra las cortinas. Solo los humanos pueden entrar. Elimina a todos los Visitantes. Una ansiedad horripilante sobre la paranoia del fin de los tiempos.",
-        "img" :"img/terror/pacman.png",
+        "img" :"img/terror/NoHuman.webp",
         "trailer": "https://youtu.be/2k64-X_zNGg?si=0ns9SmT8PNOkmAzh"
     },    
 
@@ -97,7 +97,7 @@
         "Fecha": "18 de septiembre de 2020",
         "Desarrolladora" : "Kinetic Games",
         "Sinopsis": "Phasmophobia es un juego de horror psicológico en línea cooperativo para 4 jugadores. La actividad paranormal está en aumento y depende de usted y su equipo usar todo el equipo de caza fantasmas a su disposición para recopilar la mayor cantidad de evidencia posible.",
-        "img" :"img/terror/pacman.png",
+        "img" :"img/terror/Phasmophobia.webp",
         "trailer": "https://youtu.be/adFNARIHlOs?si=Vt7kBRR5i5-GdCA8"
     },
 
@@ -114,7 +114,7 @@
         "Fecha": "24 de julio de 2025",
         "Desarrolladora" : "Renderise",
         "Sinopsis": "Ghost Watchers es un juego de horror en línea cooperativo. Explorarás y cazarás fantasmas en casas abandonadas.",
-        "img" :"img/terror/pacman.png",
+        "img" :"img/terror/GohstWatchers.webp",
         "trailer": "https://youtu.be/fwlKpXISjL4?si=ZaM5ObJoh3heBZmO"
     },
 
@@ -131,7 +131,7 @@
         "Fecha": "14 de mayo de 2020",
         "Desarrolladora" : "id Software",
         "Sinopsis": "DOOM: The Dark Ages es la precuela de los aclamados DOOM (2016) y DOOM Eternal, y narra el épico y cinematográfico origen de la furia del DOOM Slayer. Los jugadores se pondrán en la piel del DOOM Slayer en una oscura y siniestra guerra medieval contra el infierno nunca antes vista.",
-        "img" :"img/terror/pacman.png",
+        "img" :"img/terror/DOOM.webp",
         "trailer": "https://youtu.be/4tk8lkmYGWQ?si=rkLmDlSIADVwnkmA"
     },
 
@@ -148,7 +148,7 @@
         "Fecha": "23 de marzo de 2023",
         "Desarrolladora" : "CAPCOM Co., Ltd.",
         "Sinopsis": "La supervivencia es solo el comienzo. A seis años del desastre biológico en Raccoon City, Leon S. Kennedy, uno de los sobrevivientes, rastreó a la hija secuestrada del presidente hasta una aldea europea aislada, donde algo terrible le ha ocurrido a los lugareños.",
-        "img" :"img/aventura/pacman.png",
+        "img" :"img/terror/RE4.webp",
         "trailer": "https://youtu.be/Yj9UeZzp12o?si=Lhm24Qu1TyQ5VhKB"
     },
 
@@ -165,7 +165,7 @@
         "Fecha": "7 de octubre de 2024",
         "Desarrolladora" : "Bloober Team SA",
         "Sinopsis": "Silent Hill 2 es un juego de terror psicológico en tercera persona que sigue a James Sunderland, quien llega a la misteriosa ciudad de Silent Hill después de recibir una carta de su esposa fallecida. A medida que explora la ciudad, James se enfrenta a sus propios demonios internos y a criaturas aterradoras que reflejan sus miedos y culpas.",
-        "img" :"img/aventura/pacman.png",
+        "img" :"img/terror/SILENTHILL2.webp",
         "trailer": "https://youtu.be/7f5qac5f3mE?si=JfEXrWfRMH82uKhc"
     },
 
@@ -182,7 +182,7 @@
         "Fecha": "4 de septiembre de 2013",
         "Desarrolladora" : "Red Barrels",
         "Sinopsis": "Outlast es un juego de terror en primera persona que sigue a un periodista de investigación llamado Miles Upshur, quien se infiltra en un asilo psiquiátrico abandonado para descubrir la verdad detrás de los experimentos inhumanos que se llevaron a cabo allí. Armado solo con una cámara de video, Miles debe evitar a los peligrosos pacientes y descubrir los oscuros secretos del asilo.",
-        "img" :"img/aventura/pacman.png",
+        "img" :"img/terror/Outlast.webp",
         "trailer": "https://youtu.be/uKA-IA4locM?si=J5BBqk8N42EyJdX7"
     },
 
@@ -199,7 +199,7 @@
         "Fecha": "10 de diciembre de 2020",
         "Desarrolladora" : "Omocat",
         "Sinopsis": "RPG emocional de pixel art: explora sueños y traumas en historias profundas.",
-        "img" :"img/aventura/pacman.png",
+        "img" :"img/rol/Omori.webp",
         "trailer": "https://youtu.be/erzgjfU271g?si=n9yi-gVa8ud8Fjoq"
     },
 
@@ -216,7 +216,7 @@
         "Fecha": "2012",
         "Desarrolladora" : "kouri",
         "Sinopsis": "Visual novel/RPG de terror artístico en una galería de arte surrealista.",
-        "img" :"img/aventura/pacman.png",
+        "img" :"img/rol/Ib.webp",
         "trailer": "https://youtu.be/TTRPYLjRGjA?si=ZnbJdHD8haFmhws2"
     },
 
@@ -233,7 +233,7 @@
         "Fecha": "septiembre 2015",
         "Desarrolladora" : "tobyfox",
         "Sinopsis": "RPG único donde puedes evitar matar, con impacto emocional y humor irreverente.",
-        "img" :"img/aventura/pacman.png",
+        "img" :"img/rol/Undertale.webp",
         "trailer": "https://youtu.be/1Hojv0m3TqA?si=FqdIj2Q1NdTCXyxy"
     },
 
@@ -250,7 +250,7 @@
         "Fecha": "2018",
         "Desarrolladora" : "tobyfox",
         "Sinopsis": "RPG de fantasía oscura con personajes memorables y narrativa intrigante.",
-        "img" :"img/aventura/pacman.png",
+        "img" :"img/rol/Deltarune.webp",
         "trailer": "https://youtu.be/CN4ZcGJoZac?si=w6AQqIWpFnoVMNTh"
     },
 
@@ -267,7 +267,7 @@
         "Fecha": "2020",
         "Desarrolladora" : "Supergiant Games",
         "Sinopsis": "Roguelike narrativo con acción fluida, poderosas armas mitológicas y repetición divertida.",
-        "img" :"img/aventura/pacman.png",
+        "img" :"img/rol/Hades.webp",
         "trailer": "https://youtu.be/91t0ha9x0AE?si=SvERJX0KpmR3gL8W"
     },
 
@@ -284,7 +284,7 @@
         "Fecha": "2014",
         "Desarrolladora" : "Supergiant Games",
         "Sinopsis": "RPG de acción con estética cyberpunk, combate táctico y narrativa encriptada.",
-        "img" :"img/aventura/pacman.png",
+        "img" :"img/rol/Transistor.webp",
         "trailer": "https://youtu.be/GTik6sYT_BE?si=-LOQH3TSe6s2_Hdw"
     },
 
@@ -301,7 +301,7 @@
         "Fecha": "noviembre de 2015",
         "Desarrolladora" : "Bethesda",
         "Sinopsis": "RPG post‑apocalíptico con libertad total y exploración en la Commonwealth.",
-        "img" :"img/aventura/pacman.png",
+        "img" :"img/rol/fallout4.webp",
         "trailer": "https://youtu.be/XW7Of3g2JME?si=y45PSxEC_8L2q-UU"
     },
 
@@ -318,7 +318,7 @@
         "Fecha": "septiembre de 2020",
         "Desarrolladora" : "miHoYo",
         "Sinopsis": "RPG de mundo abierto estilo anime, con sistema gacha, exploración y cooperación.",
-        "img" :"img/aventura/pacman.png",
+        "img" :"img/rol/Genshin.webp",
         "trailer": "https://youtu.be/HLUY1nICQRY?si=N5jVnLDBIrOkU4ZE"
     },
 
@@ -352,7 +352,7 @@
         "Fecha": "septiembre de 2017",
         "Desarrolladora" : "Larian Studios",
         "Sinopsis": "Épico RPG táctico con libertad argumental y multijugador cooperativo.",
-        "img" :"img/aventura/pacman.png",
+        "img" :"img/rol/Divinity.webp",
         "trailer": "https://youtu.be/bTWTFX8qzPI?si=DpuZzp6VA_cjSs5P"
     }      
 ]
