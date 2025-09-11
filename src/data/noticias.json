@@ -24,5 +24,29 @@
         "fecha": "23 de mayo de 2025",
         "descrpcion": "Tainted Grail: The Fall of Avalon, RPG de mundo abierto basado en la leyenda artúrica, se lanzó el 23 de mayo de 2025 para PS5, Xbox Series X/S y PC. Combina rol de acción, exploración libre y decisiones con impacto.",
         "img" :"img/aventura/pacman.png"
+    },
+    {
+        "id": "4",
+        "noticia-titulo": "Hollow Rift: Echoes of the Void",
+        "autor": "@PixelHeroMx",
+        "fecha": "23 de julio de 2025",
+        "descrpcion": "¡El juego de acción y exploración espacial Hollow Rift: Echoes of the Void ha sorprendido a todos con su demo liberada hoy en Steam! Desarrollado por el estudio indie mexicano NebulaForge, el título mezcla narrativa profunda, física cuántica y combates al estilo soulslike. Según los desarrolladores, el juego tendrá soporte para mods desde el primer día, además de crossplay entre PC y Xbox.",
+        "img": "img/aventura/pacman.png"
+    },
+    {
+        "id": "5",
+        "noticia-titulo": "Zelda: Spirits of the Wild",
+        "autor": "@NaviNoticias",
+        "fecha": "24 de julio de 2025",
+        "descrpcion": "Durante el Nintendo Direct de hoy, se anunció el esperado Zelda: Spirits of the Wild, secuela de Tears of the Kingdom. El juego traerá una mecánica revolucionaria de 'espíritus ancestrales' que permiten a Link controlar elementos del entorno con precisión quirúrgica. Además, por primera vez en la saga, incluirá un modo cooperativo local y en línea. ¡El lanzamiento será mundial este noviembre!",
+        "img": "img/noticias/zelda.webp"
+    },
+    {
+        "id": "6",
+        "noticia-titulo": "Marvel Tōkon: Fighting Souls",
+        "autor": "@GamerEnLlamas",
+        "fecha": "4 de junio de 2025",
+        "descrpcion": "En el reciente State of Play de Sony, se reveló Marvel Tōkon: Fighting Souls, el nuevo juego de lucha por equipos desarrollado por Arc System Works (creadores de Guilty Gear y Dragon Ball FighterZ) junto con Marvel Games. Aunque es un título inspirado en Marvel vs. Capcom, introduce una mecánica única de equipos 4 vs 4, donde solo un luchador activo y tres asistentes comparten una barra de salud de equipo. La estética combina gráficos 3D con una sensibilidad estilo anime.",
+        "img": "img/noticias/marveltokon.webp"
     }
 ]
