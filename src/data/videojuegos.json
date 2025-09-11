@@ -369,7 +369,7 @@
         "Desarrolladora": "Vicarious Visions / Activision",
         "Sinopsis":"Remasterización de los tres primeros juegos clásicos de Crash Bandicoot, con gráficos mejorados, niveles desafiantes y mecánicas de plataformas precisas.",
         "img": "img/aventura/crash.webp",
-        "trailer":""
+        "trailer":"https://youtu.be/4fbO2-egZ3U?si=emUBq0d8Pk3O3J3L"
 
     },
     
@@ -387,7 +387,7 @@
         "Desarrolladora": "Toys for Bob / Activision",
         "Sinopsis": "Remasterización completa de los tres juegos originales de Spyro the Dragon, con gráficos actuales y jugabilidad clásica de plataformas y exploración.",
         "img": "img/aventura/spyro.webp",
-        "trailer": ""
+        "trailer": "https://youtu.be/orzNU1R4wb8?si=F3yFeVc9RSPnRR8D"
     },
     {
         "id": "24",
@@ -403,7 +403,7 @@
         "Desarrolladora": "Krome Studios",
         "Sinopsis": "Juego de aventuras australiano en el que controlas a Ty, un tigre de Tasmania que lanza boomerangs para salvar a su familia.",
         "img": "img/aventura/tyger.webp",
-        "trailer": ""
+        "trailer": "https://youtu.be/1XWJXCIoXaM?si=oEUBeUpg0vJ0TUsS"
     },
     {
         "id": "25",
@@ -419,7 +419,7 @@
         "Desarrolladora": "Japan Studio / Sony",
         "Sinopsis": "Knack es una criatura mágica que puede cambiar de tamaño y forma para combatir enemigos y resolver puzzles.",
         "img": "img/aventura/kanck.webp",
-        "trailer": ""
+        "trailer": "https://youtu.be/wbjR-_1cgTA?si=J8KzZM5sNkG-U4hB"
     },
     {
         "id": "26",
@@ -435,7 +435,7 @@
         "Desarrolladora": "Game Freak",
         "Sinopsis": "Eres un elefante comando que destruye estructuras y enemigos en un juego de desplazamiento lateral lleno de acción.",
         "img": "img/aventura/elephant.webp",
-        "trailer": ""
+        "trailer": "https://youtu.be/o_RusbvXV-g?si=vj0aglheopUS5fW1"
     },
     {
         "id": "27",
@@ -451,7 +451,7 @@
         "Desarrolladora": "Tour De Pizza",
         "Sinopsis": "Juego frenético y caricaturesco inspirado en Wario Land, donde un chef recorre niveles repletos de enemigos y secretos.",
         "img": "img/aventura/pizza.webp",
-        "trailer": ""
+        "trailer": "https://youtu.be/2lUkxH1tOK0?si=U2erOlAZI4Buzj0T"
     },
     {
         "id": "28",
@@ -467,7 +467,7 @@
         "Desarrolladora": "Double Fine",
         "Sinopsis": "Aventura psicodélica con mecánicas de plataformas y poderes psíquicos, donde exploras la mente de diferentes personajes.",
         "img": "img/aventura/psychp.webp",
-        "trailer": ""
+        "trailer": "https://youtu.be/liJTZfJhOcs?si=nb20yJAL6g4gnxZE"
     },
     {
         "id": "29",
@@ -483,7 +483,7 @@
         "Desarrolladora": "Nintendo",
         "Sinopsis": "Nueva entrega de Mario con mecánicas surrealistas gracias a la 'Flor Maravilla', enemigos y transformaciones únicas.",
         "img": "img/aventura/mario.webp",
-        "trailer": ""
+        "trailer": "https://youtu.be/XvQNlGKNC6o?si=QsiOKsVMoeGFCpwV"
     },
     {
         "id": "30",
@@ -499,7 +499,7 @@
         "Desarrolladora": "Sega",
         "Sinopsis": "Un regreso a las raíces de Sonic con un estilo moderno, niveles nuevos y multijugador para hasta 4 jugadores.",
         "img": "img/aventura/sonic.webp",
-        "trailer": ""
+        "trailer": "https://youtu.be/j3g-62NNoUs?si=cmgbvGx9_uPtqqCY"
     },
     
     {
@@ -516,7 +516,7 @@
         "Desarrolladora": "343 Industries / Xbox Game Studios",
         "Sinopsis": "Regresa Master Chief para enfrentar a 'The Banished' en el anillo Zeta Halo. Combina una campaña expansiva con competitivo gratuito y soporte de cross-play.",
         "img": "img/accion/haloi.webp",
-        "trailer": ""
+        "trailer": "https://youtu.be/rFh2i4AlPD4?si=Fx-Fi0MTM32itx0k"
     },
     {
         "id": "32",
@@ -532,7 +532,7 @@
         "Desarrolladora": "Santa Monica Studio / Sony Interactive Entertainment",
         "Sinopsis": "Kratos y Atreus se preparan para el Ragnarök en una aventura épica por la mitología nórdica, con combates intensos, diálogos profundos y escenarios impresionantes.",
         "img": "img/accion/googofwar.webp",
-        "trailer": ""
+        "trailer": "https://youtu.be/vtFhDrMIZjE?si=Uv8JgHZVLDq4fEse"
     },
     {
         "id": "33",
@@ -548,7 +548,7 @@
         "Desarrolladora": "The Coalition",
         "Sinopsis": "Remasterización del original de 2006, corrige el postureo a 4K y 120 fps, mantiene campaña cooperativa y multijugador 8v8.",
         "img": "img/accion/gears.jpeg",
-        "trailer": ""
+        "trailer": "https://youtu.be/vx8cUpL40Kc?si=eAdH_KO1Jiu9EcQy"
     },
     {
         "id": "34",
@@ -564,7 +564,7 @@
         "Desarrolladora": "Warhorse Studios / Deep Silver",
         "Sinopsis": "RPG medieval realista con combate táctico, exploración histórica y fuerte carga narrativa política y de venganza.",
         "img": "img/accion/kingdom.webp",
-        "trailer": ""
+        "trailer": "https://youtu.be/wMZFM6JC47Q?si=4JggDBeL5pGvp35X"
     },
     {
         "id": "35",
@@ -580,7 +580,7 @@
         "Desarrolladora": "Square Enix",
         "Sinopsis": "Segunda parte del remake de FFVII. Combate fluido en tiempo real, mundo semiabierto y una narrativa que expande el universo original.",
         "img": "img/accion/finalfantasy.webp",
-        "trailer": ""
+        "trailer": "https://youtu.be/DmDdbtDWSYU?si=BNudNODKhuW1HgpK"
     },
     {
         "id": "36",
@@ -596,7 +596,7 @@
         "Desarrolladora": "MachineGames / Bethesda",
         "Sinopsis": "Acción y exploración ambientadas en los años 30. Indy caza artefactos místicos, enfrenta peligros y resuelve acertijos clásicos.",
         "img": "img/accion/indiana.webp",
-        "trailer": ""
+        "trailer": "https://youtu.be/vSDQSHNpXfk?si=AX6xHKF_uFyWfG26"
     },
     {
         "id": "37",
@@ -612,7 +612,7 @@
         "Desarrolladora": "id Software / Bethesda",
         "Sinopsis": "Doom Slayer viaja al pasado medieval para exterminar demonios con su estilo brutal y frenético de siempre.",
         "img": "img/accion/doom.webp",
-        "trailer": ""
+        "trailer": "https://youtu.be/4tk8lkmYGWQ?si=oqlpdwlmHhCmOp32"
     },
     {
         "id": "38",
@@ -628,7 +628,7 @@
         "Desarrolladora": "Independiente",
         "Sinopsis": "Souls-like ambientado en la dinastía Ming. Combate exigente, esquivas precisas y atmósfera mística.",
         "img": "img/accion/wuchang.webp",
-        "trailer": ""
+        "trailer": "https://youtu.be/UJ0_8W3a_hY?si=tY2Q2SReO9wgMX-R"
     },
     {
         "id": "39",
@@ -644,7 +644,7 @@
         "Desarrolladora": "Skydance New Media / Marvel Games",
         "Sinopsis": "Capitán América y Pantera Negra contra Hydra en la Segunda Guerra, mezcla de acción bélica y superpoderes.",
         "img": "img/accion/marvel.webp",
-        "trailer": ""
+        "trailer": "https://youtu.be/Lb2wwEx6DVw?si=dWLYmOKF8BYTPV7h"
     },
     {
         "id": "40",
@@ -660,7 +660,7 @@
         "Desarrolladora": "Saber Interactive / Relic Entertainment",
         "Sinopsis": "Ponte en la armadura de un Space Marine y lucha junto a tus hermanos del Imperio contra las hordas de Tyranids en planetas lejanos, con combates intensos y cinemáticos que combinan armas pesadas y melee brutal.",
         "img": "img/accion/space.webp",
-        "trailer": ""
+        "trailer": "https://youtu.be/mJntSVa4OBE?si=nismsz-F0r2o-ZS8"
     },
     {
         "id": "41",
@@ -676,6 +676,6 @@
         "Desarrolladora": "Ninja Theory / Xbox Game Studios",
         "Sinopsis": "Continúa la intensa travesía de Senua en un mundo mitológico vikingo; combate visceral, puzzles emocionales y temas psicológicos profundos sobre la psicosis y la sanación. Renderizado con Unreal Engine 5 y una narrativa inmersiva.",
         "img": "img/accion/senua.webp",
-        "trailer": ""
+        "trailer": "https://youtu.be/3VYGOkMnGCE?si=NaZjRBe4TbJwYyOe"
     }
 ]
