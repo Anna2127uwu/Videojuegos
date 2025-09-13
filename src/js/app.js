@@ -47,3 +47,67 @@ function crearTarjetaCatalogo(videojuegos){
     con_etiq.classList.add('cont-etiquetas');
 }
 
+
+let todasLasNoticias=[];
+
+function obtenerJsonNoticias(){
+    fetch('data/noticias.json')
+    //creando promesa
+    .then(responde=>responde.json())
+    .then(noticias=>{
+        todasLasNoticias=noticias;
+
+        //Ordenamos las noticias por fecha (de más reciente a más antigua)
+        noticias.sort((a, b) => new Date(b.fecha) - new Date(a.fecha));
+
+    mostrarNoticiasPrincipales(noticias.slice(0, 2), 'noticias-grid'); // primeras 2 como principales
+    mostrarNoticiasMini(noticias.slice(2), 'noticiasminis-grid');
+    })
+    .catch(error=> console.error('Error cargando el JSON de noticias', error))
+}
+
+
+function mostrarNoticiasPrincipales(noticias, contenedorId){
+    const contenedor=document.getElementById(contenedorId);
+    contenedor.innerHTML = ''; // Limpiar el contenedor antes de agregar nuevas noticias
+    noticias.forEach( noticia=> {
+        const article = document.createElement('article');
+        article.classList.add('noticia');
+
+        article.innerHTML=`
+            <div class="noticia-img">
+                <img src="${noticia.img}" alt=" ${noticia.alt}"/>
+                <h4 class = "noticia-titulo">${noticia.titulo}</h4>
+            </div>
+            <div class="noticia-meta">
+                <p class="noticia-fecha">${noticia.fecha}</p>
+                <p class="noticia-autor">${noticia.autor}</p>
+            </div>
+            <p class="noticia-desc">${noticia.descripcion}</p>
+            <a href="${noticia.link}" class="noticia-link">Más información</a>
+        `;
+        contenedor.appendChild(article);
+    });
+}
+
+function mostrarNoticiasMini(noticias, contenedorId){   
+const contenedor=document.getElementById(contenedorId);
+noticias.forEach( noticia=> {
+    const divmini = document.createElement('div');
+    divmini.classList.add('noticia-mini');
+
+    divmini.innerHTML=`
+        <img src="${noticia.img}" alt="${noticia.alt}">
+        <div class="noticia-mini-contenido">
+            <h4 class="noticia-titulo">${noticia.titulo}</h4>
+            <div class="noticia-meta">
+                <p class="noticia-fecha">${noticia.fecha}</p>
+                <p class="noticia-autor">${noticia.autor}</p>
+            </div>
+            <p class="noticia-desc">${noticia.descripcion}</p>
+            <a href="${noticia.link}" class="noticia-link">Más información</a>
+        </div>
+    `;
+    contenedor.appendChild(divmini);
+});
+}

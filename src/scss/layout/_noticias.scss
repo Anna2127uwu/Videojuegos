@@ -1,11 +1,13 @@
-@use 'base/variables' as v; 
+@use 'base/variables' as v;
+
 .noticias {
   padding: 2rem 4rem;
   background: v.$fondoSecciones;
   color: v.$colorEnlaces;
+  line-height: 1.5; // legibilidad general
 
   h2 {
-     font-family: v.$fuenteTitulos;
+    font-family: v.$fuenteTitulos;
     font-size: 1.6rem;
     font-weight: bold;
     margin-bottom: 1rem;
@@ -35,13 +37,6 @@
           }
         }
 
-        .noticia-fecha-autor {
-          margin-top: 0.8rem;
-          font-size: 0.75rem;
-          text-transform: uppercase;
-          color: v.$colorfechas;
-        }
-
         .noticia-titulo {
           margin: 0.5rem 0;
           font-size: 1.1rem;
@@ -49,9 +44,15 @@
           line-height: 1.4;
         }
 
+        .noticia-meta {
+          display: flex;
+          flex-direction: column;
+          gap: 0; // sin separación extra
+          margin-bottom: 0.3rem;
+        }
+
         .noticia-desc {
           font-size: 0.95rem;
-          color: v.$colorEnlaces;
           margin-bottom: 0.8rem;
         }
 
@@ -75,18 +76,24 @@
       margin: 2rem 0;
     }
 
+    /* Grid de noticias mini */
+    .noticiasminis-grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1.5rem;
+      
+
     /* Noticia pequeña debajo */
     .noticia-mini {
       display: flex;
       gap: 1rem;
-      align-items: flex-start;
+      align-items: center;
 
       img {
         width: 180px;
         height: 110px;
         object-fit: cover;
         border-radius: 6px;
-        margin-top: 1.4rem;
       }
 
       .mini-contenido {
@@ -98,16 +105,12 @@
           margin-bottom: 0.3rem;
         }
 
-        .noticia-fecha-autor {
-          font-size: 0.75rem;
-          text-transform: uppercase;
-          color: v.$colorfechas;
-          margin-bottom: 0.3rem;
+        .noticia-meta {
+          margin-bottom: 0.2rem;
         }
 
         .noticia-desc {
           font-size: 0.9rem;
-          color: v.$colorEnlaces;
           margin-bottom: 0.5rem;
         }
 
@@ -123,6 +126,24 @@
         }
       }
     }
+    }
   }
 
+  /* Estilos compartidos para fecha y autor */
+  .noticia-fecha,
+  .noticia-autor {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: v.$colorfechas;
+    margin: 0; // compactar
+    line-height: 1.2; // menos aire entre fecha y autor
+  }
+
+  /* Ajustes específicos para noticias mini */
+  .noticia-mini {
+    .noticia-fecha,
+    .noticia-autor {
+      font-size: 0.75rem;
+    }
+  }
 }
