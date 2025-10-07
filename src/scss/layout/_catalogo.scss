@@ -2,30 +2,53 @@
 .seccion-catalogo{
     .seccion-catalogo-div{
         background: v.$efectoSecciones ;
-        box-shadow: 0 0 20px rgba(0,0,0,0.6);
-        width: 94%;
+        box-shadow: 0 0 20px rgba(0,0,0,1);
+        width: 92%;
+        border-radius: 10px;
+        height: 20vh;
         margin-left: 2rem;
-        padding: 10px;
-        .categorias{
+        padding: 20px;
+        margin-bottom: 2rem;
+        
+        h2{
+            text-align: center;
+        }
+        .btns-catalogo{
             display: flex;
+            align-items: center;
+            justify-content: space-around;
             flex-direction: row;
-            gap: 1rem;
-            margin-bottom: 12px;
-            .btn-categoria{
-                padding: 6px;
-                width: 7%;
+            .btn-catalogo{
+                color: black;
+                padding: 10px;
+                width: 10%;
             }
         }
     }
-
+    .cont-catalogo {
+    position: relative;
+    overflow: hidden; /* evita desbordes */
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(/Videojuegos/img/fondo/fondo2.jpg);
+        background-size: cover;
+        background-position: center;
+        filter: blur(8px);
+        z-index: -1;
+    }
     .catalogo{
-        margin: 2rem;
+        padding: 3rem;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 2rem;
         .card-catalogo{
             padding: 1rem;
-            border: 2px solid;
+            border: 2px solid gray;
+            border-radius: 10px;
             display: flex;
             flex-direction: column;
             gap: 10px;
@@ -37,27 +60,74 @@
                 flex-direction: row;
                 gap: 10px;
                 .cont-image{
-                    width: 50%;
+                    width: 100%;
                     height: 100%;
-                    background-color: pink;
+                    transition: all .3s ease;
+                    position: relative;
                     img{
                         width: 100%;
                         height: 100%;
-                        object-fit: cover;
+                        object-fit: contain;
+                        pointer-events: none;
+                    }
+                    & img:last-child{
+                        position: absolute;
+                        padding: .3rem;
+                        width: 88%;
+                        height: 80%;
+                        bottom: 15px;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                        transform: translateY(25%);
+                        transition: .3s ease;
+                        opacity: 0;
+                        object-fit: contain;
+                        pointer-events: none;
+                        
+                    }
+                    &:hover{
+                        transform: perspective(250px)
+                        rotateX(10deg)
+                        translateY(-5%)
+                        translateZ(0);
+                        
+                    }
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        height: 100%;
+                        width: 100%;
+                        background-image: linear-gradient(to bottom, transparent 10%,
+                        rgba(0,0,0,0.5) 50%,
+                        rgba(0,0,0)95%);
+                        opacity: 0;
+                        transition: all .3s ease;
+                        pointer-events: none;
+                    }
+                    &:hover::before{
+                        opacity: 1;
+                    }
+                    &:hover img:last-child{
+                        opacity: 1;
+                        transform: translateY(10%);
                     }
                 }
                 .cont-info{
                     width: 50%;
-                    max-height: 100%;
+                    
                     p{
                         font-size: 18px;
                         text-align: center;
+                        color: rgb(255, 255, 255);
                     }
                 }
             }
             .cont-etiquetas{
                 display: flex;
                 flex-direction: row;
+                margin-top: 1rem;
                 justify-content: space-between;
                 flex-wrap: wrap;
                 align-items: center;
@@ -72,5 +142,7 @@
             }
         }
     }
+}
+
 
 }

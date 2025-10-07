@@ -84,35 +84,7 @@
 </section>
 
 <script>
-  // Hero dinámico con autoplay y clic en cards
-  const hero = document.querySelector(".hero");
-  const title = document.getElementById("hero-title");
-  const desc = document.getElementById("hero-desc");
-  const cards = document.querySelectorAll(".card");
 
-  let index = 0;
-  const changeHero = (card) => {
-    hero.style.backgroundImage = `url(${card.dataset.bg})`;
-    title.textContent = card.dataset.title;
-    desc.textContent = card.dataset.desc;
-  };
-
-  // Cambiar con clic
-  cards.forEach((card, i) => {
-    card.addEventListener("click", () => {
-      index = i;
-      changeHero(card);
-    });
-  });
-
-  // Autoplay cada 5s
-  setInterval(() => {
-    index = (index + 1) % cards.length;
-    changeHero(cards[index]);
-  }, 5000);
-
-  // Inicial
-  changeHero(cards[0]);
 </script>
 
 
@@ -122,16 +94,19 @@
             <h2>Nuestro Catalogo</h2>
             <div class="btns-catalogo">
               <button class="btn btn-catalogo" data-text="Todos">Todos</button>
-              <button class="btn btn-catalogo" data-text="Accion">Accion</button>
+              <button class="btn btn-catalogo" data-text="Acción">Accion</button>
               <button class="btn btn-catalogo" data-text="Aventura">Aventura</button>
               <button class="btn btn-catalogo" data-text="Terror">Terror</button>
               <button class="btn btn-catalogo" data-text="Rol">Rol</button>
             </div>
         </div>
         <!-- Diseño de cards catalogo -->
-        <div class="catalogo" id="catalogoPrincipal">
-            
-        </div>
+          <div class="cont-catalogo">
+            <div class="catalogo" id="catalogoPrincipal">
+                
+            </div>
+
+         </div>
     </section>
 
 
@@ -142,90 +117,15 @@
 
   <div class="novedades">
 
-    <div class="noticias-grid">
-      <!-- Noticia 1 -->
-      <article class="noticia">
-        <div class="noticia-img">
-          <img src="../img/noticias/noticia1.jpg" alt="Noticia principal 1">
-          <h4 class="noticia-titulo">Hollow Rift: Echoes of the Void</h4>
-        </div>
-        <p class="noticia-fecha-autor">23 de julio de 2025
-        <br>POR: @PixelHeroMx </p>
-        <p class="noticia-desc">
-¡El juego de acción y exploración espacial Hollow Rift: Echoes of the Void ha sorprendido a todos con su demo liberada hoy en Steam! Desarrollado por el estudio indie mexicano NebulaForge, el título mezcla narrativa profunda, física cuántica y combates al estilo soulslike. Según los desarrolladores, el juego tendrá soporte para mods desde el primer día, además de crossplay entre PC y Xbox.
-        </p>
-        <a href="#" class="noticia-link">Más información</a>
-      </article>
-
-      <!-- Noticia 2 -->
-      <article class="noticia">
-        <div class="noticia-img">
-          <img src="../img/noticias/noticia2.jpg" alt="Noticia principal 2">
-          <h4 class="noticia-titulo">Zelda: Spirits of the Wild</h4>
-        </div>
-        <p class="noticia-fecha-autor">24 de julio de 2025
-        <br>POR: @NaviNoticias</p>
-        <p class="noticia-desc">
-Durante el Nintendo Direct de hoy, se anunció el esperado Zelda: Spirits of the Wild, secuela de Tears of the Kingdom. El juego traerá una mecánica revolucionaria de "espíritus ancestrales" que permiten a Link controlar elementos del entorno con precisión quirúrgica. Además, por primera vez en la saga, incluirá un modo cooperativo local y en línea. ¡El lanzamiento será mundial este noviembre!
-        </p>
-        <a href="#" class="noticia-link">Más información</a>
-      </article>
+    <div class="noticias-grid" id="cont-noticias-prin">
+      
     </div>
-
 <!-- Línea divisoria -->
     <hr class="linea-separadora">
 
     <!-- Noticia más pequeña -->
-    <div class="noticia-mini">
-      <img src="../img/noticias/clair.png" alt="Noticia 3">
-      <div class="mini-contenido">
-        <h4>Marvel Tōkon: Fighting Souls</h4>
-        <p class="noticia-fecha-autor">4 de junio de 2025
-        <br>POR: @GamerEnLlamas </p>
-        <p class="noticia-desc">
-En el reciente State of Play de Sony, se reveló Marvel Tōkon: Fighting Souls, el nuevo juego de lucha por equipos desarrollado por Arc System Works (creadores de Guilty Gear y Dragon Ball FighterZ) junto con Marvel Games. Aunque es un título inspirado en Marvel vs. Capcom, introduce una mecánica única de equipos 4 vs 4, donde solo un luchador activo y tres asistentes comparten una barra de salud de equipo. La estética combina gráficos 3D con una sensibilidad estilo anime.
-</p>
-        <a href="#" class="noticia-link">Más información</a>
-      </div>
-    </div>
-
-     <div class="noticia-mini">
-      <img src="../img/noticias/clair.png" alt="Noticia 4">
-      <div class="mini-contenido">
-        <h4>Kingdom Come: Deliverance II</h4>
-        <p class="noticia-fecha-autor">4 de febrero de 2025
-        <br>POR: @RPGNoticiasMX </p>
-        <p class="noticia-desc">
-El esperado Kingdom Come: Deliverance II, la secuela del exitoso RPG medieval de Warhorse Studios, fue lanzado el 4 de febrero de 2025 para PC, PlayStation 5 y Xbox Series X/S. El juego continúa la historia de Henry en un mundo abierto fiel a la historia.
-</p>        
-<a href="#" class="noticia-link">Más información</a>
-      </div>
-    </div>
-
-<div class="noticia-mini">
-      <img src="../img/noticias/clair.png" alt="Noticia 5">
-      <div class="mini-contenido">
-        <h4>Clair Obscur: Expedition 33</h4>
-        <p class="noticia-fecha-autor">24 de abril de 2025
-        <br>POR: @RPGFanCritico </p>
-        <p class="noticia-desc">
-El RPG Clair Obscur: Expedition 33, del estudio francés Sandfall Interactive, fue lanzado el 24 de abril de 2025. Recibió excelentes críticas por su mezcla entre combate por turnos reactivo, exploración estratégica y narrativa envolvente.
-</p>
-        <a href="#" class="noticia-link">Más información</a>
-      </div>
-    </div>
-
-<div class="noticia-mini">
-      <img src="../img/noticias/clair.png" alt="Noticia 6">
-      <div class="mini-contenido">
-        <h4>Tainted Grail: The Fall of Avalon</h4>
-        <p class="noticia-fecha-autor">23 de mayo de 2025
-        <br>POR: @ExploradorRPG</p>
-        <p class="noticia-desc">
-Tainted Grail: The Fall of Avalon, RPG de mundo abierto basado en la leyenda artúrica, se lanzó el 23 de mayo de 2025 para PS5, Xbox Series X/S y PC. Combina rol de acción, exploración libre y decisiones con impacto.
-</p>
-        <a href="#" class="noticia-link">Más información</a>
-      </div>
+    <div class="noticias-mini-grid" id="cont-noticias-mini">
+     
     </div>
   </div>
 </section>
@@ -327,7 +227,7 @@ Tainted Grail: The Fall of Avalon, RPG de mundo abierto basado en la leyenda art
 
   <div class="carrusel">
     <div class="carrusel-item" id="item1">
-      <img src="img1.jpg" alt="Juegos gratuitos">
+      <img src="img/img1.jpg" alt="Juegos gratuitos">
       <span>JUEGOS GRATUITOS</span>
     </div>
     <div class="carrusel-item" id="item2">
@@ -348,7 +248,14 @@ Tainted Grail: The Fall of Avalon, RPG de mundo abierto basado en la leyenda art
   <a class="flecha next" href="#item4">&#10095;</a>
 </div>
 
- <!-- Footer -->
+<!-- Diseño de modal -->
+<div class="modal-overlay" id="modal-cont">
+  <div class="modal" id="modal">
+    
+  </div>
+</div>
+
+<!-- Footer -->
 <footer class="footer">
   <!-- Parte superior con logo y redes -->
   <div class="footer-top">

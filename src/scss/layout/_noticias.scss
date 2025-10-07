@@ -2,7 +2,7 @@
 
 .noticias {
   padding: 2rem 4rem;
-  background: v.$fondoSecciones;
+ // background: v.$fondoSecciones;
   color: v.$colorEnlaces;
   line-height: 1.5; // legibilidad general
 
@@ -77,7 +77,7 @@
     }
 
     /* Grid de noticias mini */
-    .noticiasminis-grid {
+    .noticias-mini-grid {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
       gap: 1.5rem;
@@ -86,6 +86,7 @@
     /* Noticia pequeña debajo */
     .noticia-mini {
       display: flex;
+      flex-direction: row;
       gap: 1rem;
       align-items: center;
 
@@ -96,7 +97,7 @@
         border-radius: 6px;
       }
 
-      .mini-contenido {
+      .noticia-mini-contenido {
         flex: 1;
 
         h4 {

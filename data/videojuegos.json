@@ -13,7 +13,8 @@
         "Desarrolladora" : "Now Production / Bandai Namco",
         "Sinopsis": "Remake del clásico Pac-Man World de PS1. Pac-Man debe rescatar a su familia explorando mundos en 3D llenos de enemigos, rompecabezas y plataformas.",
         "img" :"img/aventura/pacman.png",
-        "trailer": "https://youtu.be/m88oPZTx7rI?si=DyrFav0ySBlY-iOC"
+        "img2": "img/muñecoPacman.webp",
+        "trailer": "https://www.youtube.com/embed/1VE8nYzcAa8?si=bx2qToJf6qbrlrxB"
     },
     
     {
@@ -30,7 +31,8 @@
         "Desarrolladora" : "Spicy Horse Games",
         "Sinopsis": "Hace once años un pavoroso incendio acabó con la familia de Alicia y la dejó terriblemente trastornada. Más tarde fue internada en el Manicomio Rutledge, donde sufrió para hacer frente a sus demonios adentrándose aún más en su mundo de fantasía, el País de las Maravillas. Ahora, después de diez años, finalmente ha logrado asegurar su liberación. Pero aún carga con el gran daño psicológico de aquel trágico evento. Con su mente hecha jirones, es incapaz de enfrentarse al miedo provocado por sus extraños recuerdos, sueños y visiones. Quizás lo haga mejor en el País de las Maravillas. Siempre ha sido así. Suele viajar allí buscando lo que el mundo real no le puede proporcionar: seguridad, conocimiento y la verdad acerca del pasado. Pero durante su ausencia, el País de las Maravillas también ha sufrido lo suyo. Algo ha ido terriblemente mal y ahora una gran maldad se cierne sobre lo que antaño fuera su hermoso refugio. ¿Puede Alicia salvar al País de las Maravillas (y a ella misma) de la locura que los consume?",
         "img" :"img/terror/alicemadnessreturns.webp",
-        "trailer": "https://youtu.be/VR8wXsvUrBg?si=ScaRpRnOEcUc2gGV"
+        "img2" :"img/muñAlice.webp",
+        "trailer": "https://www.youtube.com/embed/cFrs5UGB-ns?si=G35YRvCbv0l0ZOvR"
     },
 
     {
@@ -46,8 +48,9 @@
         "Fecha": "14 de junio de 2016",
         "Desarrolladora" : "Behaviour Interactive Inc.",
         "Sinopsis": "Dead by Daylight es un juego de horror de multijugador (4 contra 1) en el que un jugador representa el rol del asesino despiadado y los 4 restantes juegan como supervivientes que intentan escapar de él para evitar ser capturados y asesinados.",
-        "img" : "img/terror/deadbydaylight.webp",
-        "trailer": "https://youtu.be/JGhIXLO3ul8?si=Qbo3D1sFK6duT8Kp"
+        "img" : "img/terror/deadbyPortada.webp",
+        "img2": "img/dead.webp",
+        "trailer": "https://www.youtube.com/embed/JGhIXLO3ul8?si=MEc_UnMm9KRq0dxq"
     },
 
     {
@@ -64,7 +67,8 @@
         "Desarrolladora" : "semiwork",
         "Sinopsis": "Un juego de horror en línea cooperativo para hasta 6 jugadores. Localiza objetos valiosos, completamente basados en física, y manipúlalos con cuidado mientras los recuperas y extraes para satisfacer los deseos de tu creador.",
         "img" :"img/terror/R.E.P.O..webp",
-        "trailer": "https://youtu.be/0ais4U7UX14?si=aRTZM716m7052csm"
+        "img2": "img/repo.webp",
+        "trailer": "https://www.youtube.com/embed/oSfoK8eSeD8?si=EbeZLre5nl7Xn6Wh"
     }, 
 
     {
@@ -81,7 +85,8 @@
         "Desarrolladora" : "Trioskaz",
         "Sinopsis": "ALERTA. Quédate adentro. Asegura tus puertas con llave. Cierra las cortinas. Solo los humanos pueden entrar. Elimina a todos los Visitantes. Una ansiedad horripilante sobre la paranoia del fin de los tiempos.",
         "img" :"img/terror/NoHuman.webp",
-        "trailer": "https://youtu.be/2k64-X_zNGg?si=0ns9SmT8PNOkmAzh"
+        "img2": "img/nohuman.webp",
+        "trailer": "https://www.youtube.com/embed/tOVB4wAWlbE?si=Bw5Be7JyjwxnO56T"
     },    
 
     {
@@ -90,7 +95,7 @@
         "categoria": "Terror",
         "clasificacion": "M",
         "alt": "Imagen Phasmophobia",
-        "Plataformas": ["PC, Xbox", "PlayStation"],
+        "Plataformas": ["PC", "Xbox", "PlayStation"],
         "Multijugador": "Sí",
         "Precio": 227.99,
         "descuento": 40,
@@ -98,7 +103,8 @@
         "Desarrolladora" : "Kinetic Games",
         "Sinopsis": "Phasmophobia es un juego de horror psicológico en línea cooperativo para 4 jugadores. La actividad paranormal está en aumento y depende de usted y su equipo usar todo el equipo de caza fantasmas a su disposición para recopilar la mayor cantidad de evidencia posible.",
         "img" :"img/terror/Phasmophobia.webp",
-        "trailer": "https://youtu.be/adFNARIHlOs?si=Vt7kBRR5i5-GdCA8"
+        "img2": "img/p.webp",
+        "trailer": "https://www.youtube.com/embed/sRa9oeo5KiY?si=CLEp8J3H7AtpuJMM"
     },
 
     {
@@ -115,7 +121,7 @@
         "Desarrolladora" : "Renderise",
         "Sinopsis": "Ghost Watchers es un juego de horror en línea cooperativo. Explorarás y cazarás fantasmas en casas abandonadas.",
         "img" :"img/terror/GhostWatchers.webp",
-        "trailer": "https://youtu.be/fwlKpXISjL4?si=ZaM5ObJoh3heBZmO"
+        "trailer": "https://www.youtube.com/embed/fwlKpXISjL4?si=56fw_I9r0-Gg3hrD"
     },
 
     {
@@ -132,7 +138,8 @@
         "Desarrolladora" : "id Software",
         "Sinopsis": "DOOM: The Dark Ages es la precuela de los aclamados DOOM (2016) y DOOM Eternal, y narra el épico y cinematográfico origen de la furia del DOOM Slayer. Los jugadores se pondrán en la piel del DOOM Slayer en una oscura y siniestra guerra medieval contra el infierno nunca antes vista.",
         "img" :"img/terror/DOOM.webp",
-        "trailer": "https://youtu.be/4tk8lkmYGWQ?si=rkLmDlSIADVwnkmA"
+        "img2" :"img/muñDoom.webp",
+        "trailer": "https://www.youtube.com/embed/4tk8lkmYGWQ?si=8c9EQWqgZWOSbH_N"
     },
 
     {
@@ -149,7 +156,8 @@
         "Desarrolladora" : "CAPCOM Co., Ltd.",
         "Sinopsis": "La supervivencia es solo el comienzo. A seis años del desastre biológico en Raccoon City, Leon S. Kennedy, uno de los sobrevivientes, rastreó a la hija secuestrada del presidente hasta una aldea europea aislada, donde algo terrible le ha ocurrido a los lugareños.",
         "img" :"img/terror/RE4.webp",
-        "trailer": "https://youtu.be/Yj9UeZzp12o?si=Lhm24Qu1TyQ5VhKB"
+        "img2" :"img/muñResident.webp",
+        "trailer": "https://www.youtube.com/embed/FBZqcVXeTFc?si=2JwIs2ni-ZR4Zzb4"
     },
 
     {
@@ -166,7 +174,8 @@
         "Desarrolladora" : "Bloober Team SA",
         "Sinopsis": "Silent Hill 2 es un juego de terror psicológico en tercera persona que sigue a James Sunderland, quien llega a la misteriosa ciudad de Silent Hill después de recibir una carta de su esposa fallecida. A medida que explora la ciudad, James se enfrenta a sus propios demonios internos y a criaturas aterradoras que reflejan sus miedos y culpas.",
         "img" :"img/terror/SILENTHILL2.webp",
-        "trailer": "https://youtu.be/7f5qac5f3mE?si=JfEXrWfRMH82uKhc"
+        "img2": "img/silenthill.webp",
+        "trailer": "https://www.youtube.com/embed/WjzYuCsIuk0?si=EqpkZFREGY3ILE8R"
     },
 
     {
@@ -183,7 +192,8 @@
         "Desarrolladora" : "Red Barrels",
         "Sinopsis": "Outlast es un juego de terror en primera persona que sigue a un periodista de investigación llamado Miles Upshur, quien se infiltra en un asilo psiquiátrico abandonado para descubrir la verdad detrás de los experimentos inhumanos que se llevaron a cabo allí. Armado solo con una cámara de video, Miles debe evitar a los peligrosos pacientes y descubrir los oscuros secretos del asilo.",
         "img" :"img/terror/Outlast.webp",
-        "trailer": "https://youtu.be/uKA-IA4locM?si=J5BBqk8N42EyJdX7"
+        "img2": "img/outlast.webp",
+        "trailer": "https://www.youtube.com/embed/uKA-IA4locM?si=vYtmYyXa3HVrH8y-"
     },
 
     {
@@ -200,7 +210,8 @@
         "Desarrolladora" : "Omocat",
         "Sinopsis": "RPG emocional de pixel art: explora sueños y traumas en historias profundas.",
         "img" :"img/rol/Omori.webp",
-        "trailer": "https://youtu.be/erzgjfU271g?si=n9yi-gVa8ud8Fjoq"
+        "img2": "img/omori.webp",
+        "trailer": "https://www.youtube.com/embed/CyVv-jFJiJ8?si=cRcQrCpCLdbavc8F"
     },
 
     {
@@ -217,7 +228,8 @@
         "Desarrolladora" : "kouri",
         "Sinopsis": "Visual novel/RPG de terror artístico en una galería de arte surrealista.",
         "img" :"img/rol/Ib.webp",
-        "trailer": "https://youtu.be/TTRPYLjRGjA?si=ZnbJdHD8haFmhws2"
+        "img2": "img/ib.webp",
+        "trailer": "https://www.youtube.com/embed/TTRPYLjRGjA?si=nrq7nstdALXzNysK"
     },
 
     {
@@ -234,7 +246,8 @@
         "Desarrolladora" : "tobyfox",
         "Sinopsis": "RPG único donde puedes evitar matar, con impacto emocional y humor irreverente.",
         "img" :"img/rol/Undertale.webp",
-        "trailer": "https://youtu.be/1Hojv0m3TqA?si=FqdIj2Q1NdTCXyxy"
+        "img2": "img/undertale.webp",
+        "trailer": "https://www.youtube.com/embed/SqjY_-beWi0?si=Zinrz9xX7uzrnSHH"
     },
 
     {
@@ -251,7 +264,8 @@
         "Desarrolladora" : "tobyfox",
         "Sinopsis": "RPG de fantasía oscura con personajes memorables y narrativa intrigante.",
         "img" :"img/rol/Deltarune.webp",
-        "trailer": "https://youtu.be/CN4ZcGJoZac?si=w6AQqIWpFnoVMNTh"
+        "img2": "img/deltarune.webp",
+        "trailer": "https://www.youtube.com/embed/CN4ZcGJoZac?si=e4cEGGtlnv_vNf4x"
     },
 
     {
@@ -268,7 +282,8 @@
         "Desarrolladora" : "Supergiant Games",
         "Sinopsis": "Roguelike narrativo con acción fluida, poderosas armas mitológicas y repetición divertida.",
         "img" :"img/rol/Hades.webp",
-        "trailer": "https://youtu.be/91t0ha9x0AE?si=SvERJX0KpmR3gL8W"
+        "img2": "img/hades.webp",
+        "trailer": "https://www.youtube.com/embed/91t0ha9x0AE?si=OWH4_laHC3qgmCrm"
     },
 
     {
@@ -285,7 +300,8 @@
         "Desarrolladora" : "Supergiant Games",
         "Sinopsis": "RPG de acción con estética cyberpunk, combate táctico y narrativa encriptada.",
         "img" :"img/rol/Transistor.webp",
-        "trailer": "https://youtu.be/GTik6sYT_BE?si=-LOQH3TSe6s2_Hdw"
+        "img2": "img/transitor.webp",
+        "trailer": "https://www.youtube.com/embed/nkVqTyMcgqo?si=r8JHjCK5c30f-Rg9"
     },
 
     {
@@ -302,7 +318,8 @@
         "Desarrolladora" : "Bethesda",
         "Sinopsis": "RPG post‑apocalíptico con libertad total y exploración en la Commonwealth.",
         "img" :"img/rol/fallout4.webp",
-        "trailer": "https://youtu.be/XW7Of3g2JME?si=y45PSxEC_8L2q-UU"
+        "img2": "img/fallout.webp",
+        "trailer": "https://www.youtube.com/embed/XW7Of3g2JME?si=pI1ovnItnPgJdNDG"
     },
 
     {
@@ -319,7 +336,8 @@
         "Desarrolladora" : "miHoYo",
         "Sinopsis": "RPG de mundo abierto estilo anime, con sistema gacha, exploración y cooperación.",
         "img" :"img/rol/Genshin.webp",
-        "trailer": "https://youtu.be/HLUY1nICQRY?si=N5jVnLDBIrOkU4ZE"
+        "img2": "img/genshin.webp",
+        "trailer": "https://www.youtube.com/embed/HLUY1nICQRY?si=lUOX67ZeziXRMHNT"
     },
 
     {
@@ -336,7 +354,8 @@
         "Desarrolladora" : "CD Projekt Red",
         "Sinopsis": "Acompaña a Geralt en un mundo oscuro lleno de moralidad y monstruos.",
         "img" :"img/rol/Witcher.webp",
-        "trailer": "https://youtu.be/c0i88t0Kacs?si=MGK3OLaD9KArzp7_"
+        "img2": "img/wicher.webp",
+        "trailer": "https://www.youtube.com/embed/c0i88t0Kacs?si=za3R4sgcCXNKtgNx"
     },
 
     {
@@ -353,7 +372,8 @@
         "Desarrolladora" : "Larian Studios",
         "Sinopsis": "Épico RPG táctico con libertad argumental y multijugador cooperativo.",
         "img" :"img/rol/Divinity.webp",
-        "trailer": "https://youtu.be/bTWTFX8qzPI?si=DpuZzp6VA_cjSs5P"
+        "img2": "img/divinity.webp",
+        "trailer": "https://www.youtube.com/embed/bTWTFX8qzPI?si=VxaBhN1eNyG9B6xq"
     },
     {
         "id": "22",
@@ -369,7 +389,8 @@
         "Desarrolladora": "Vicarious Visions / Activision",
         "Sinopsis":"Remasterización de los tres primeros juegos clásicos de Crash Bandicoot, con gráficos mejorados, niveles desafiantes y mecánicas de plataformas precisas.",
         "img": "img/aventura/crash.webp",
-        "trailer":"https://youtu.be/4fbO2-egZ3U?si=emUBq0d8Pk3O3J3L"
+        "img2": "img/muñCrash.webp",
+        "trailer":"https://www.youtube.com/embed/4fbO2-egZ3U?si=x3-yi54_OuRbauNn"
 
     },
     
@@ -387,7 +408,8 @@
         "Desarrolladora": "Toys for Bob / Activision",
         "Sinopsis": "Remasterización completa de los tres juegos originales de Spyro the Dragon, con gráficos actuales y jugabilidad clásica de plataformas y exploración.",
         "img": "img/aventura/spyro.webp",
-        "trailer": "https://youtu.be/orzNU1R4wb8?si=F3yFeVc9RSPnRR8D"
+        "img2": "img/spirot.webp",
+        "trailer": "https://www.youtube.com/embed/orzNU1R4wb8?si=U_UTQvnGjDtXa0IZ"
     },
     {
         "id": "24",
@@ -403,7 +425,8 @@
         "Desarrolladora": "Krome Studios",
         "Sinopsis": "Juego de aventuras australiano en el que controlas a Ty, un tigre de Tasmania que lanza boomerangs para salvar a su familia.",
         "img": "img/aventura/tyger.webp",
-        "trailer": "https://youtu.be/1XWJXCIoXaM?si=oEUBeUpg0vJ0TUsS"
+        "img2": "img/tiger.webp",
+        "trailer": "https://www.youtube.com/embed/7S9wvO5jOf0?si=UgvB3_mZB1IaiPNr"
     },
     {
         "id": "25",
@@ -419,7 +442,8 @@
         "Desarrolladora": "Japan Studio / Sony",
         "Sinopsis": "Knack es una criatura mágica que puede cambiar de tamaño y forma para combatir enemigos y resolver puzzles.",
         "img": "img/aventura/kanck.webp",
-        "trailer": "https://youtu.be/wbjR-_1cgTA?si=J8KzZM5sNkG-U4hB"
+        "img2": "img/knack.webp",
+        "trailer": "https://www.youtube.com/embed/q59tHyhDMkI?si=7fK-cfLXvfApkYwO"
     },
     {
         "id": "26",
@@ -435,7 +459,8 @@
         "Desarrolladora": "Game Freak",
         "Sinopsis": "Eres un elefante comando que destruye estructuras y enemigos en un juego de desplazamiento lateral lleno de acción.",
         "img": "img/aventura/elephant.webp",
-        "trailer": "https://youtu.be/o_RusbvXV-g?si=vj0aglheopUS5fW1"
+        "img2": "img/tembo.webp",
+        "trailer": "https://www.youtube.com/embed/qXa3kWx-6x0?si=0uJBfpcZxfN1eBoT"
     },
     {
         "id": "27",
@@ -451,7 +476,8 @@
         "Desarrolladora": "Tour De Pizza",
         "Sinopsis": "Juego frenético y caricaturesco inspirado en Wario Land, donde un chef recorre niveles repletos de enemigos y secretos.",
         "img": "img/aventura/pizza.webp",
-        "trailer": "https://youtu.be/2lUkxH1tOK0?si=U2erOlAZI4Buzj0T"
+        "img2": "img/pizza.webp",
+        "trailer": "https://www.youtube.com/embed/Wlq6fFOqI28?si=UpMe3FgG-fqhzasY"
     },
     {
         "id": "28",
@@ -467,7 +493,8 @@
         "Desarrolladora": "Double Fine",
         "Sinopsis": "Aventura psicodélica con mecánicas de plataformas y poderes psíquicos, donde exploras la mente de diferentes personajes.",
         "img": "img/aventura/psychp.webp",
-        "trailer": "https://youtu.be/liJTZfJhOcs?si=nb20yJAL6g4gnxZE"
+        "img2": "img/physco.webp",
+        "trailer": "https://www.youtube.com/embed/liJTZfJhOcs?si=aJocpkrCstjTiCv_"
     },
     {
         "id": "29",
@@ -483,7 +510,8 @@
         "Desarrolladora": "Nintendo",
         "Sinopsis": "Nueva entrega de Mario con mecánicas surrealistas gracias a la 'Flor Maravilla', enemigos y transformaciones únicas.",
         "img": "img/aventura/mario.webp",
-        "trailer": "https://youtu.be/XvQNlGKNC6o?si=QsiOKsVMoeGFCpwV"
+        "img2": "img/mario.webp",
+        "trailer": "https://www.youtube.com/embed/JStAYvbeSHc?si=zeklTwtPmAalbnMQ"
     },
     {
         "id": "30",
@@ -498,8 +526,9 @@
         "Fecha": "17 de octubre de 2023",
         "Desarrolladora": "Sega",
         "Sinopsis": "Un regreso a las raíces de Sonic con un estilo moderno, niveles nuevos y multijugador para hasta 4 jugadores.",
-        "img": "img/aventura/sonic.webp",
-        "trailer": "https://youtu.be/j3g-62NNoUs?si=cmgbvGx9_uPtqqCY"
+        "img": "img/aventura/sonicPortada.webp",
+        "img2": "img/sonic.webp",
+        "trailer": "https://www.youtube.com/embed/j3g-62NNoUs?si=WQd99A1-fNswRLi7"
     },
     
     {
@@ -516,7 +545,8 @@
         "Desarrolladora": "343 Industries / Xbox Game Studios",
         "Sinopsis": "Regresa Master Chief para enfrentar a 'The Banished' en el anillo Zeta Halo. Combina una campaña expansiva con competitivo gratuito y soporte de cross-play.",
         "img": "img/accion/haloi.png",
-        "trailer": "https://youtu.be/rFh2i4AlPD4?si=Fx-Fi0MTM32itx0k"
+        "img2": "img/halo.webp",
+        "trailer": "https://www.youtube.com/embed/rFh2i4AlPD4?si=lnRd-IrdXfTGjeju"
     },
     {
         "id": "32",
@@ -532,7 +562,8 @@
         "Desarrolladora": "Santa Monica Studio / Sony Interactive Entertainment",
         "Sinopsis": "Kratos y Atreus se preparan para el Ragnarök en una aventura épica por la mitología nórdica, con combates intensos, diálogos profundos y escenarios impresionantes.",
         "img": "img/accion/googofwar.webp",
-        "trailer": "https://youtu.be/vtFhDrMIZjE?si=Uv8JgHZVLDq4fEse"
+        "img2": "img/kratos.webp",
+        "trailer": "https://www.youtube.com/embed/F3jePdO9_jc?si=PNlRb3h7uqySRMsC"
     },
     {
         "id": "33",
@@ -548,7 +579,8 @@
         "Desarrolladora": "The Coalition",
         "Sinopsis": "Remasterización del original de 2006, corrige el postureo a 4K y 120 fps, mantiene campaña cooperativa y multijugador 8v8.",
         "img": "img/accion/gears.jpeg",
-        "trailer": "https://youtu.be/vx8cUpL40Kc?si=eAdH_KO1Jiu9EcQy"
+        "img2": "img/locust.webp",
+        "trailer": "https://www.youtube.com/embed/vx8cUpL40Kc?si=1CIdqFsvMatVxo-s"
     },
     {
         "id": "34",
@@ -564,7 +596,8 @@
         "Desarrolladora": "Warhorse Studios / Deep Silver",
         "Sinopsis": "RPG medieval realista con combate táctico, exploración histórica y fuerte carga narrativa política y de venganza.",
         "img": "img/accion/kingdom.webp",
-        "trailer": "https://youtu.be/wMZFM6JC47Q?si=4JggDBeL5pGvp35X"
+        "img2": "img/king.webp",
+        "trailer": "https://www.youtube.com/embed/wMZFM6JC47Q?si=LqNW-glEt2ngsIF0"
     },
     {
         "id": "35",
@@ -580,7 +613,8 @@
         "Desarrolladora": "Square Enix",
         "Sinopsis": "Segunda parte del remake de FFVII. Combate fluido en tiempo real, mundo semiabierto y una narrativa que expande el universo original.",
         "img": "img/accion/finalfantasy.webp",
-        "trailer": "https://youtu.be/DmDdbtDWSYU?si=BNudNODKhuW1HgpK"
+        "img2": "img/final.webp",
+        "trailer": "https://www.youtube.com/embed/Q56cRDseTGQ?si=k6t4T268h4oFDtqw"
     },
     {
         "id": "36",
@@ -596,24 +630,10 @@
         "Desarrolladora": "MachineGames / Bethesda",
         "Sinopsis": "Acción y exploración ambientadas en los años 30. Indy caza artefactos místicos, enfrenta peligros y resuelve acertijos clásicos.",
         "img": "img/accion/indiana.webp",
-        "trailer": "https://youtu.be/vSDQSHNpXfk?si=AX6xHKF_uFyWfG26"
+        "img2": "img/indi.webp",
+        "trailer": "https://www.youtube.com/embed/vSDQSHNpXfk?si=smzNKR9-8t4788Yh"
     },
-    {
-        "id": "37",
-        "nombre": "Doom: The Dark Ages",
-        "categoria": "Acción",
-        "clasificacion": "M",
-        "alt": "Imagen juego Doom Dark Ages",
-        "Plataformas": ["PC", "PlayStation", "Xbox"],
-        "Multijugador": "Sí",
-        "Precio": 1116,
-        "descuento": 10,
-        "Fecha": "2025",
-        "Desarrolladora": "id Software / Bethesda",
-        "Sinopsis": "Doom Slayer viaja al pasado medieval para exterminar demonios con su estilo brutal y frenético de siempre.",
-        "img": "img/accion/doom.webp",
-        "trailer": "https://youtu.be/4tk8lkmYGWQ?si=oqlpdwlmHhCmOp32"
-    },
+    
     {
         "id": "38",
         "nombre": "Wuchang: Fallen Feathers",
@@ -628,7 +648,8 @@
         "Desarrolladora": "Independiente",
         "Sinopsis": "Souls-like ambientado en la dinastía Ming. Combate exigente, esquivas precisas y atmósfera mística.",
         "img": "img/accion/wuchang.webp",
-        "trailer": "https://youtu.be/UJ0_8W3a_hY?si=tY2Q2SReO9wgMX-R"
+        "img2": "img/wuchang.webp",
+        "trailer": "https://www.youtube.com/embed/KMMMNGV9LqI?si=m2-WK0wHjWA19Ubv"
     },
     {
         "id": "39",
@@ -644,7 +665,8 @@
         "Desarrolladora": "Skydance New Media / Marvel Games",
         "Sinopsis": "Capitán América y Pantera Negra contra Hydra en la Segunda Guerra, mezcla de acción bélica y superpoderes.",
         "img": "img/accion/marvel.webp",
-        "trailer": "https://youtu.be/Lb2wwEx6DVw?si=dWLYmOKF8BYTPV7h"
+        "img2": "img/panther.webp",
+        "trailer": "https://www.youtube.com/embed/Lb2wwEx6DVw?si=I1O83NN1xpl0J8b8"
     },
     {
         "id": "40",
@@ -660,7 +682,8 @@
         "Desarrolladora": "Saber Interactive / Relic Entertainment",
         "Sinopsis": "Ponte en la armadura de un Space Marine y lucha junto a tus hermanos del Imperio contra las hordas de Tyranids en planetas lejanos, con combates intensos y cinemáticos que combinan armas pesadas y melee brutal.",
         "img": "img/accion/space.webp",
-        "trailer": "https://youtu.be/mJntSVa4OBE?si=nismsz-F0r2o-ZS8"
+        "img2": "img/war.webp",
+        "trailer": "https://www.youtube.com/embed/A_HljUo8Jjk?si=UsHLqkuO_uaEYVhn"
     },
     {
         "id": "41",
@@ -676,6 +699,7 @@
         "Desarrolladora": "Ninja Theory / Xbox Game Studios",
         "Sinopsis": "Continúa la intensa travesía de Senua en un mundo mitológico vikingo; combate visceral, puzzles emocionales y temas psicológicos profundos sobre la psicosis y la sanación. Renderizado con Unreal Engine 5 y una narrativa inmersiva.",
         "img": "img/accion/senua.webp",
-        "trailer": "https://youtu.be/3VYGOkMnGCE?si=NaZjRBe4TbJwYyOe"
+        "img2": "img/senua.webp",
+        "trailer": "https://www.youtube.com/embed/3VYGOkMnGCE?si=aT5f8TXmsXBgmcvK"
     }
 ]
