@@ -231,4 +231,8 @@ noticias.forEach( noticia=> {
             </div>
             <p class="noticia-desc">${noticia.descripcion}</p>
             <a href="${noticia.link}" class="noticia-link">Más información</a>
- 
+        </div>
+    `;
+    contenedor.appendChild(divmini);
+});
+}
