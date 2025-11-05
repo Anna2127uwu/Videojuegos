@@ -1,0 +1,109 @@
+@use 'base/variables' as v;
+.preventas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: v.$efectoSecciones;
+    .caja-titulo{
+        width: 95%;
+        height: 20vh;
+        position: relative;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        background-image: url(/Videojuegos/img/fondo/fondo4.jpg);
+        background-size: cover;
+        
+        border-radius: 10px;
+        border: 2px solid  rgba(182, 9, 170, 0.396);
+        h1{ 
+            margin-top: 2.6rem;
+            text-align: center;
+        }
+        .caja-hijo{
+            position: absolute;
+            width: 20%;
+            height: 20vh;
+            right: 1rem;
+            top: 2px;
+            
+            img{
+                width: 90%;
+                height: 100%;
+                
+            }
+            
+        }
+    }
+    
+    .cont-preventa{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        perspective: 1200px;
+        .caja{
+            width: 95%;
+            border-radius: 10px;
+            position: relative;
+            margin: auto;
+            overflow: visible;
+            
+            img{
+                width: 100%;
+                border-radius: 10px;
+                display: block;
+                transition: transform 1s ease, filter 0.8s ease;
+                filter: grayscale(1);
+                
+                border: 25px solid white;
+                backface-visibility: hidden;
+            }
+            
+        }
+    }
+}
+
+  /* Primera: arriba a la derecha */
+    .videojuego1 img {
+        margin-top: 2rem;
+        transform: rotateX(-20deg) rotateY(20deg);
+    }
+
+    /* Segunda: arriba a la izquierda */
+    .videojuego2 img {
+        transform: rotateX(-10deg) rotateY(-30deg);
+    }
+
+    /* Tercera: arriba a la derecha */
+    .videojuego3 img {
+        transform: rotateX(-20deg) rotateY(20deg);
+        
+    }
+    .preventas .cont-preventa .caja:hover img  {
+        filter: grayscale(0);
+        transform: rotateX(0) rotateY(0) scale(.8);
+    }
+
+
+    .preventas .cont-preventa .caja::after {
+  content: attr(data-fecha);   /* toma el valor del atributo data-fecha */
+    position: absolute;
+    bottom: 12rem;
+    left: 25%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: rgb(246, 246, 247);
+    padding: 6px 12px;
+    border-radius: 10px;
+    font-size: 2rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+}
+/* Mostrar solo cuando se hace hover */
+.preventas .cont-preventa .caja:hover::after {
+    opacity: 1;
+}

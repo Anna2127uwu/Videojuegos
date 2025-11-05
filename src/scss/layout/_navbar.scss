@@ -1,26 +1,76 @@
 @use 'base/variables' as v;
+@use 'base/mixins' as m;
 .menu{
+    width: 100%;
     background-color: v.$efectoSecciones ;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;   
     padding: 1rem;
     margin: 1rem;
-    a{
-        color: v.$colorEnlaces;
-        font-size: 20px;
+    .menu-logo{
         svg{
+                width: 30px;
+                height: 30px;
+            }
+    }
+    .menu-links, .menu-logo{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        a{
+            color: v.$colorEnlaces;
+            font-size: 20px;
+            flex: 1 1 150px;
+            max-width: 200px;
+            
+            &:hover{
+                text-decoration: underline;
+            }
+            img{
+                width: 100px;
+                height: 10vh;
+            }
+        }
+    }
+    .menu-hamburguesa{
+        display: none;
+        cursor: pointer;
+        svg{
+            color: white;
             width: 30px;
             height: 30px;
         }
-        &:hover{
-            text-decoration: underline;
+    }
+    /* Diseño responsivo */
+    @include m.telefono{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        .menu-hamburguesa{
+            display: block;
+            align-self: flex-start;
         }
-        img{
-            width: 100px;
-            height: 10vh;
+        .menu-links, .menu-logo{
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            background-color: v.$efectoSecciones;
+            padding: 1rem;
+            border-radius: 10px;
+            &.show{
+                display: flex;
+            }
+            a{
+                width: 100%;
+                padding: 0.5rem 0;
+                text-align: center;
+            }
         }
     }
 }
+

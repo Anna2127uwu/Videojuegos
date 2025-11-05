@@ -1,6 +1,11 @@
 let todosLosVideojuegos=[];
 let todasLasNoticias=[];
+const menuHamburguesa=document.getElementById('menu-hamburguesa');
+const menuLinks=document.getElementById('menu-links');
 
+menuHamburguesa.addEventListener('click', () => {
+    menuLinks.classList.toggle('show');
+});
 
   // Hero dinámico con autoplay y clic en cards
   const hero = document.querySelector(".hero");
