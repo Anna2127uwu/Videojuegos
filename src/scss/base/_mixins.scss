@@ -6,7 +6,7 @@
     }
 }
 @mixin telefono{
-    @media (min-width : v.$telefono)and (max-width: calc(v.$tablet - 1px)){
+    @media (min-width : v.$telefono) and (max-width: calc(v.$tablet - 1px)){
         @content;
     }
 }
@@ -16,7 +16,7 @@
     }
 }
 
-@mixin grid($columnas: 1, $gap: 3rem){
+@mixin grid($columnas: 1, $gap: 3rem ){
     display: grid;
     grid-template-columns: repeat($columnas, 1fr);
     gap: $gap;

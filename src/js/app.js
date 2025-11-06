@@ -227,7 +227,9 @@ noticias.forEach( noticia=> {
     divmini.classList.add('noticia-mini');
 
     divmini.innerHTML=`
-        <img src="${noticia.img}" alt="${noticia.alt}">
+        <div class="cont-img">
+            <img src="${noticia.img}" alt="${noticia.alt}">
+        </div>
         <div class="noticia-mini-contenido">
             <h4 class="noticia-titulo">${noticia.titulo}</h4>
             <div class="noticia-meta">
