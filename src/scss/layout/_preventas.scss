@@ -2,36 +2,58 @@
 .preventas{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     position: relative;
     background: v.$efectoSecciones;
+    padding-bottom: 4rem;
     .caja-titulo{
         width: 95%;
-        height: 20vh;
+        height: 22vh;
         position: relative;
-        margin-bottom: 2rem;
-        margin-top: 2rem;
-        background-image: url(/Videojuegos/img/fondo/fondo4.jpg);
-        background-size: cover;
-        
-        border-radius: 10px;
-        border: 2px solid  rgba(182, 9, 170, 0.396);
+        margin: 3rem 0;
+        background: linear-gradient(135deg, rgba(20, 0, 35, 0.9), rgba(60, 0, 80, 0.8)),
+                    url("/Videojuegos/img/fondo/fondo4.jpg") center/cover no-repeat;
+        border-radius: 15px;
+        border: 2px solid rgba(255, 0, 255, 0.3);
+        box-shadow: 0 0 15px rgba(255, 0, 255, 0.2);
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         h1{ 
-            margin-top: 2.6rem;
-            text-align: center;
+            font-size: 3rem;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+
+        /* efecto neón */
+        text-shadow: 
+            0 0 5px #fff,
+            0 0 10px #0ff,
+            0 0 20px #0ff,
+            0 0 40px #0ff;
+        animation: neonPulse 2s infinite alternate;
         }
         .caja-hijo{
             position: absolute;
-            width: 20%;
-            height: 20vh;
-            right: 1rem;
-            top: 2px;
+            right: 2rem;
+            bottom: 0;
+            width: 18%;
+            height: 100%;
             
             img{
-                width: 90%;
-                height: 100%;
-                
+                width: 100%;
+                height: auto;
+                filter: drop-shadow(0 0 10px cyan);
+                opacity: 0.85;
+                transition: opacity 0.3s ease;
+                &:hover{
+                    opacity: 1;
+                }
             }
             
         }
@@ -41,24 +63,24 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        position: relative;
         perspective: 1200px;
+        gap: 3rem;
         .caja{
             width: 95%;
-            border-radius: 10px;
             position: relative;
-            margin: auto;
+            border-radius: 12px;
             overflow: visible;
+            transition: transform 0.8s ease;
+            cursor: pointer;
             
             img{
                 width: 100%;
-                border-radius: 10px;
+                border-radius: 12px;
                 display: block;
                 transition: transform 1s ease, filter 0.8s ease;
                 filter: grayscale(1);
-                
-                border: 25px solid white;
+                border: 20px solid rgba(255, 255, 255, 0.9);
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
                 backface-visibility: hidden;
             }
             
@@ -106,4 +128,21 @@
 /* Mostrar solo cuando se hace hover */
 .preventas .cont-preventa .caja:hover::after {
     opacity: 1;
+}
+/* 🔹 Animación del título */
+@keyframes neonPulse {
+  from {
+    text-shadow: 
+      0 0 5px #fff,
+      0 0 10px #0ff,
+      0 0 20px #0ff,
+      0 0 40px #0ff;
+  }
+  to {
+    text-shadow: 
+      0 0 2px #fff,
+      0 0 5px #0ff,
+      0 0 10px #0ff,
+      0 0 25px #0ff;
+  }
 }
