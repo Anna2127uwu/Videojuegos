@@ -1,4 +1,5 @@
-
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
 .cont-categoria {
     width: 92%;
     display: flex;
@@ -8,6 +9,22 @@
     padding: 3rem;
     justify-content: center;
     margin: auto;
+
+    //diseño responsivo
+    @include m.telefono{
+        @include m.grid();
+        .cont-television{
+            width: 96% !important;
+            .cont-baseTV {
+                width: 96% !important;
+                height: auto;
+            }
+        }
+        .cont-info {
+            width: 96% !important;
+            text-align: center;
+        }
+    }
 
     .cont-television {
         width: 45%;
@@ -115,6 +132,7 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
         }
         }
+    
     }
 
     .cont-info {
