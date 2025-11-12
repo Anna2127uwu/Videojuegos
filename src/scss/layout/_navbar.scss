@@ -1,76 +1,134 @@
-@use 'base/variables' as v;
-@use 'base/mixins' as m;
-.menu{
+@use "sass:color";
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.menu {
     width: 100%;
-    background-color: v.$efectoSecciones ;
+    background: linear-gradient(90deg, #141414, #1f1f1f);
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;   
-    padding: 1rem;
-    margin: 1rem;
-    .menu-logo{
-        svg{
-                width: 30px;
-                height: 30px;
-            }
-    }
-    .menu-links, .menu-logo{
+    align-items: center;
+    padding: 1rem 2rem;
+    margin: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    .menu-logo {
+
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
         align-items: center;
-        width: 100%;
-        a{
+        justify-content: center;
+        gap: 0.5rem;
+
+        svg {
+            width: 35px;
+            height: 35px;
+            color: v.$fondoHero;
+            transition: transform 0.3s ease;
+        }
+
+        &:hover svg {
+            transform: rotate(10deg) scale(1.1);
+        }
+    }
+
+    .menu-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        flex-wrap: wrap;
+        transition: all 0.3s ease;
+
+        a {
             color: v.$colorEnlaces;
-            font-size: 20px;
-            flex: 1 1 150px;
-            max-width: 200px;
-            
-            &:hover{
-                text-decoration: underline;
+            font-size: 1.1rem;
+            font-weight: 500;
+            position: relative;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: v.$fondoHero;
             }
-            img{
-                width: 100px;
-                height: 10vh;
+
+            // línea de subrayado animada al hacer hover
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: -6px;
+                left: 0;
+                width: 0%;
+                height: 2px;
+                background: v.$fondoHero;
+                transition: width 0.3s ease;
+            }
+
+            &:hover::after {
+                width: 100%;
             }
         }
     }
-    .menu-hamburguesa{
+
+    .menu-hamburguesa {
         display: none;
         cursor: pointer;
-        svg{
+
+        svg {
             color: white;
             width: 30px;
             height: 30px;
+            transition: transform 0.2s ease;
+
+            &:hover {
+                transform: scale(1.2);
+                color: v.$fondoHero;
+            }
         }
     }
-    /* Diseño responsivo */
-    @include m.telefono{
+
+  /*Diseño responsivo */
+    @include m.telefono {
         flex-direction: column;
         align-items: flex-start;
-        gap: 0.5rem;
-        .menu-hamburguesa{
+        padding: 1rem;
+
+        .menu-hamburguesa {
             display: block;
-            align-self: flex-start;
+            align-self: flex-end;
+            margin-bottom: 0.5rem;
         }
-        .menu-links, .menu-logo{
+
+        .menu-links {
             display: none;
             flex-direction: column;
             width: 100%;
-            background-color: v.$efectoSecciones;
-            padding: 1rem;
-            border-radius: 10px;
-            &.show{
+            background: color.adjust(v.$efectoSecciones, $lightness: -5%);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+            padding: 1rem 0;
+            gap: 1rem;
+            overflow: hidden;
+            transition: all 0.4s ease-in-out;
+
+            &.show {
                 display: flex;
             }
-            a{
-                width: 100%;
-                padding: 0.5rem 0;
-                text-align: center;
+
+        a {
+            width: 100%;
+            text-align: center;
+            padding: 0.5rem 0;
+            font-size: 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+            &:last-child {
+                border-bottom: none;
             }
         }
     }
+    }
 }
-

@@ -1,0 +1,34 @@
+[
+    {
+        "categoria": "Acción",
+        "informacion": "Los videojuegos de acción se centran en la velocidad, los reflejos y la coordinación. Suelen incluir combates intensos, disparos o desafíos de precisión.",
+        "experiencia": "Podrás experimentar adrenalina, emoción y tensión en cada partida, con desafíos que pondrán a prueba tus reflejos y estrategias.",
+        "curiosidad": "El primer videojuego de acción considerado como tal fue 'Space Invaders' (1978), que marcó el inicio de los arcades modernos.",
+        "img": "img/categoria/accion.webp",
+        "alt": "Imagen representativa de videojuegos de acción"
+    },
+    {
+        "categoria": "Aventura",
+        "informacion": "Los videojuegos de aventura se enfocan en la exploración, resolución de acertijos y narrativa. El jugador suele embarcarse en un viaje o misión.",
+        "experiencia": "Vivirás historias inmersivas, descubrirás mundos misteriosos y resolverás desafíos que requieren lógica e ingenio.",
+        "curiosidad": "El primer videojuego de aventura fue 'Adventure' (1979) para Atari 2600, pionero en incorporar un mundo abierto y objetos interactivos.",
+        "img": "img/categoria/aventura.webp",
+        "alt": "Imagen representativa de videojuegos de aventura"
+    },
+    {
+        "categoria": "Terror",
+        "informacion": "Los videojuegos de terror buscan generar miedo, tensión y suspenso. Combinan atmósferas oscuras, efectos sonoros y narrativas inquietantes.",
+        "experiencia": "Sentirás el suspenso y la adrenalina de enfrentarte a tus peores miedos mientras intentas sobrevivir en entornos hostiles.",
+        "curiosidad": "Uno de los primeros videojuegos de terror fue 'Haunted House' (1982), considerado pionero del género en consolas.",
+        "img": "img/categoria/terror.webp",
+        "alt": "Imagen representativa de videojuegos de terror"
+    },
+    {
+        "categoria": "Rol",
+        "informacion": "Los videojuegos de rol (RPG) se centran en la progresión de personajes, historias profundas y toma de decisiones que afectan el mundo del juego.",
+        "experiencia": "Experimentarás la sensación de evolucionar, tomar decisiones importantes y sumergirte en mundos llenos de historia y personajes únicos.",
+        "curiosidad": "El primer videojuego de rol fue 'Akalabeth: World of Doom' (1980), precursor de la saga Ultima y base de los RPG modernos.",
+        "img": "img/categoria/rol.webp",
+        "alt": "Imagen representativa de videojuegos de rol"
+    }
+]

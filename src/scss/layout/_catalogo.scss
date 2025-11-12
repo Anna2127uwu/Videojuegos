@@ -3,17 +3,22 @@
 .seccion-catalogo{
     
     .seccion-catalogo-div{
-        background: v.$efectoSecciones ;
-        box-shadow: 0 0 20px rgba(0,0,0,1);
+        background: linear-gradient(135deg, #140018, #210028, #120017);
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
         width: 92%;
-        border-radius: 10px;
-        height: 20vh;
-        margin-left: 2rem;
-        padding: 20px;
-        margin-bottom: 2rem;
+        border-radius: 15px;
+        padding: 2rem 1rem;
+        margin: 2rem auto;
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        position: relative;
         
         h2{
-            text-align: center;
+            color: #d6b3ff;
+            font-size: 1.8rem;
+            font-weight: 700;
+            text-shadow: 0 0 10px rgba(150, 0, 255, 0.6);
+            margin-bottom: 1.5rem;
         }
         .btns-catalogo{
             display: flex;
@@ -21,19 +26,54 @@
             flex-wrap: wrap; 
             align-items: center;
             justify-content: center;
-            gap: 15px;
+            gap: 1rem;
             
             
             .btn-catalogo{
-                color: black;
-                padding: 10px;
+                background: linear-gradient(90deg, #b0ff2a, v.$fondoBtns);
+                color: #0f0f0f;
+                border: none;
+                border-radius: 12px;
+                padding: 0.7rem 1.2rem;
+                font-weight: 600;
+                box-shadow: 0 0 10px v.$fondoBtns;
+                transition: all 0.3s ease;
                 flex: 1 1 150px;
                 max-width: 200px;
-                
+
+            &:hover {
+                transform: scale(1.05);
+                box-shadow: 0 0 20px rgba(176, 255, 42, 0.8);
+                filter: brightness(1.1);
             }
+
+            &.activo {
+                background: linear-gradient(90deg, #00ffe5, #0077ff);
+                color: white;
+                box-shadow: 0 0 25px rgba(0, 255, 255, 0.6);
+            }
+        }
+
             @include m.tablet{
-                justify-content: space-evenly;
+                .btns-catalogo {
+                    gap: 0.8rem;
+                    .btn-catalogo {
+                        flex: 1 1 120px;
+                    }
+                }
             }
+            @include m.telefono {
+                h2 {
+                    font-size: 1.4rem;
+                }
+                .btns-catalogo {
+                        flex-direction: column;
+                        .btn-catalogo {
+                        width: 100%;
+                        max-width: none;
+                        }
+                    }
+                }
         }
     }
     .cont-catalogo {
@@ -64,6 +104,7 @@
         @include m.tablet{
             @include m.grid(2);
         }
+        
         .card-catalogo{
             padding: 1rem;
             border: 2px solid gray;
