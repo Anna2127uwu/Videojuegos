@@ -20,11 +20,7 @@
         max-width: 850px;
         max-height: 80vh;
         overflow-y: auto;
-        background: linear-gradient(
-        135deg,
-        color.adjust(v.$colormasinfo, $lightness: 5%),
-        color.adjust(v.$colormasinfo, $lightness: -5%)
-        );
+        background: black;
         border-radius: 20px;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
         color: white;
