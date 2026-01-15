@@ -1,26 +1,22 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Press+Start+2P&family=VT323&display=swap');
 
-
 //colores de la pagina
-$fondo: linear-gradient(180deg,rgb(0, 0, 0) 0%, rgb(72, 39, 89) 100%);
+$fondo: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(72, 39, 89) 100%);
 $fondoHero: #b63687;
 $fondoSecciones: #000000;
-$efectoSecciones: rgba(182, 54, 135, 0.141) ;
+$efectoSecciones: rgba(182, 54, 135, 0.141);
 $fondoPie: #1800ad;
 $fondoBtns: #c1ff72;
 $colorEnlaces: #fff;
 $colorfechas: rgba(255, 255, 255, 0.6);
 $colormasinfo: #00aaff;
 
-//Fuentes 
+//Fuentes
 $fuenteTitulos: 'Clock', sans-serif;
 $fuenteSubtitulos: 'Clock', sans-serif;
 $fuentePrincipal: 'Computer Says No', sans-serif;
 
-
-
 //medidas para media query
-$telefono: 320px;
+$telefono: 0px;
 $tablet: 768px;
 $escritorio: 1200px;
