@@ -1,8 +1,7 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
-.seccion-catalogo{
-    
-    .seccion-catalogo-div{
+.seccion-catalogo {
+    .seccion-catalogo-div {
         background: linear-gradient(135deg, #140018, #210028, #120017);
         box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
         width: 92%;
@@ -12,24 +11,23 @@
         text-align: center;
         border: 1px solid rgba(255, 255, 255, 0.05);
         position: relative;
-        
-        h2{
+
+        h2 {
             color: #d6b3ff;
             font-size: 1.8rem;
             font-weight: 700;
             text-shadow: 0 0 10px rgba(150, 0, 255, 0.6);
             margin-bottom: 1.5rem;
         }
-        .btns-catalogo{
+        .btns-catalogo {
             display: flex;
             //Permiter que los btn se ajusten
-            flex-wrap: wrap; 
+            flex-wrap: wrap;
             align-items: center;
             justify-content: center;
             gap: 1rem;
-            
-            
-            .btn-catalogo{
+
+            .btn-catalogo {
                 background: linear-gradient(90deg, #b0ff2a, v.$fondoBtns);
                 color: #0f0f0f;
                 border: none;
@@ -41,20 +39,20 @@
                 flex: 1 1 150px;
                 max-width: 200px;
 
-            &:hover {
-                transform: scale(1.05);
-                box-shadow: 0 0 20px rgba(176, 255, 42, 0.8);
-                filter: brightness(1.1);
+                &:hover {
+                    transform: scale(1.05);
+                    box-shadow: 0 0 20px rgba(176, 255, 42, 0.8);
+                    filter: brightness(1.1);
+                }
+
+                &.activo {
+                    background: linear-gradient(90deg, #00ffe5, #0077ff);
+                    color: white;
+                    box-shadow: 0 0 25px rgba(0, 255, 255, 0.6);
+                }
             }
 
-            &.activo {
-                background: linear-gradient(90deg, #00ffe5, #0077ff);
-                color: white;
-                box-shadow: 0 0 25px rgba(0, 255, 255, 0.6);
-            }
-        }
-
-            @include m.tablet{
+            @include m.tablet {
                 .btns-catalogo {
                     gap: 0.8rem;
                     .btn-catalogo {
@@ -67,142 +65,141 @@
                     font-size: 1.4rem;
                 }
                 .btns-catalogo {
-                        flex-direction: column;
-                        .btn-catalogo {
+                    flex-direction: column;
+                    .btn-catalogo {
                         width: 100%;
                         max-width: none;
-                        }
                     }
                 }
+            }
         }
     }
     .cont-catalogo {
-    position: relative;
-    overflow: hidden; /* evita desbordes */
-   
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0; left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url(/Videojuegos/img/fondo/fondo2.jpg);
-        background-size: cover;
-        background-position: center;
-        filter: blur(8px);
-        z-index: -1;
-    }
-    .catalogo{
-        padding: 3rem;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 2rem;
-        @include m.telefono{
-            @include m.grid(1);
+        position: relative;
+        overflow: hidden; /* evita desbordes */
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(/Videojuegos/img/fondo/fondo2.jpg);
+            background-size: cover;
+            background-position: center;
+            filter: blur(8px);
+            z-index: -1;
         }
-        /* Diseño responsivo */
-        @include m.tablet{
-            @include m.grid(2);
-        }
-        
-        .card-catalogo{
-            padding: 1rem;
-            border: 2px solid gray;
-            border-radius: 10px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            height: 90%;
-            .contenedor{
-                width: 100%;
-                height: 200px;
+        .catalogo {
+            padding: 3rem;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            @include m.telefono {
+                @include m.grid(1);
+            }
+            /* Diseño responsivo */
+            @include m.tablet {
+                @include m.grid(2);
+            }
+
+            .card-catalogo {
+                padding: 1rem;
+                border: 2px solid gray;
+                border-radius: 10px;
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
                 gap: 10px;
-                .cont-image{
+                height: 100%;
+
+                .contenedor {
                     width: 100%;
-                    height: 100%;
-                    transition: all .3s ease;
-                    position: relative;
-                    img{
+                    height: 200px;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;
+                    .cont-image {
                         width: 100%;
                         height: 100%;
-                        object-fit: contain;
-                        pointer-events: none;
+                        transition: all 0.3s ease;
+                        position: relative;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                            pointer-events: none;
+                        }
+                        & img:last-child {
+                            position: absolute;
+                            padding: 0.3rem;
+                            width: 88%;
+                            height: 80%;
+                            bottom: 15px;
+                            left: 0;
+                            right: 0;
+                            margin: auto;
+                            transform: translateY(25%);
+                            transition: 0.3s ease;
+                            opacity: 0;
+                            object-fit: contain;
+                            pointer-events: none;
+                        }
+                        &:hover {
+                            transform: perspective(250px) rotateX(10deg)
+                                translateY(-5%) translateZ(0);
+                        }
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            bottom: 0;
+                            height: 100%;
+                            width: 100%;
+                            background-image: linear-gradient(
+                                to bottom,
+                                transparent 10%,
+                                rgba(0, 0, 0, 0.5) 50%,
+                                rgba(0, 0, 0) 95%
+                            );
+                            opacity: 0;
+                            transition: all 0.3s ease;
+                            pointer-events: none;
+                        }
+                        &:hover::before {
+                            opacity: 1;
+                        }
+                        &:hover img:last-child {
+                            opacity: 1;
+                            transform: translateY(10%);
+                        }
                     }
-                    & img:last-child{
-                        position: absolute;
-                        padding: .3rem;
-                        width: 88%;
-                        height: 80%;
-                        bottom: 15px;
-                        left: 0;
-                        right: 0;
-                        margin: auto;
-                        transform: translateY(25%);
-                        transition: .3s ease;
-                        opacity: 0;
-                        object-fit: contain;
-                        pointer-events: none;
-                        
-                    }
-                    &:hover{
-                        transform: perspective(250px)
-                        rotateX(10deg)
-                        translateY(-5%)
-                        translateZ(0);
-                        
-                    }
-                    &::before{
-                        content: "";
-                        position: absolute;
-                        bottom: 0;
-                        height: 100%;
-                        width: 100%;
-                        background-image: linear-gradient(to bottom, transparent 10%,
-                        rgba(0,0,0,0.5) 50%,
-                        rgba(0,0,0)95%);
-                        opacity: 0;
-                        transition: all .3s ease;
-                        pointer-events: none;
-                    }
-                    &:hover::before{
-                        opacity: 1;
-                    }
-                    &:hover img:last-child{
-                        opacity: 1;
-                        transform: translateY(10%);
+                    .cont-info {
+                        width: 50%;
+
+                        p {
+                            font-size: 18px;
+                            text-align: center;
+                            color: rgb(255, 255, 255);
+                        }
                     }
                 }
-                .cont-info{
-                    width: 50%;
-                    
-                    p{
-                        font-size: 18px;
+                .cont-etiquetas {
+                    display: flex;
+                    flex-direction: row;
+                    margin-top: 1rem;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    gap: 10px;
+                    div {
+                        background-color: aquamarine;
+                        padding: 0.2rem;
+                        width: 40%;
                         text-align: center;
-                        color: rgb(255, 255, 255);
+                        border-radius: 20px;
                     }
-                }
-            }
-            .cont-etiquetas{
-                display: flex;
-                flex-direction: row;
-                margin-top: 1rem;
-                justify-content: space-between;
-                flex-wrap: wrap;
-                align-items: center;
-                gap: 10px;
-                div{
-                    background-color: aquamarine;
-                    padding: .2rem;
-                    width: 40%;
-                    text-align: center;
-                    border-radius: 20px;
                 }
             }
         }
     }
-}
-
-
 }

@@ -1,12 +1,14 @@
 @use 'base/variables' as v;
+@use 'base/mixins' as m;
 
 .hero {
     position: relative;
-    width: 94%;
+    width: 95.5%;
+    height: fit-content;
     margin: 2rem;
-    padding: 10px;
-    height: 700px;
-    border-radius: 8px;
+    padding: 0.625rem;
+    height: 80vh;
+    border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -14,33 +16,78 @@
     background: #000 center/cover no-repeat;
     transition: background-image 0.5s ease-in-out;
 
+    /* Diseño responsivo */
+
+    @include m.tablet {
+        width: 89%;
+        height: 50vh;
+    }
+
+    @include m.telefono {
+        width: 78%;
+        height: 50vh;
+    }
+
     .hero-overlay {
         position: absolute;
         inset: 0;
-        background: rgba(0, 0, 0, 0.4);
+        background: rgba(0, 0, 0, 0.6);
         display: flex;
         align-items: center;
         justify-content: right;
         text-align: left;
         padding: 2rem;
 
+        /* Diseño responsivo */
+
+        @include m.tablet {
+            padding-bottom: 11rem;
+        }
+
         .hero-content {
-            max-width: 600px;
+            max-width: 38rem;
             z-index: 2;
+
+            /* Diseño responsivo */
+
+            @include m.tablet {
+                max-width: 50%;
+            }
 
             h1 {
                 font-size: 2.5rem;
                 margin-bottom: 1rem;
+
+                /* Diseño responsivo */
+
+                @include m.tablet {
+                    font-size: 2rem;
+                }
+
+                @include m.telefono {
+                    font-size: 1.5rem;
+                }
             }
 
             p {
                 font-size: 1.2rem;
                 margin-bottom: 1.5rem;
+
+                /* Diseño responsivo */
+
+                @include m.tablet {
+                    font-size: 1rem;
+                }
+
+                @include m.telefono {
+                    font-size: 0.9rem;
+                }
             }
 
             .hero-buttons {
                 display: flex;
                 gap: 1rem;
+                margin-bottom: 3rem;
 
                 .btn {
                     background: #ffcc00;
@@ -114,14 +161,25 @@
 
         .card {
             position: relative;
-            width: 250px;
-            height: 150px;
-            border-radius: 12px;
+            width: 20%;
+            height: 20vh;
+            border-radius: 0.75rem;
             margin: 1rem;
             margin-bottom: 0rem;
             overflow: hidden;
             cursor: pointer;
             transition: transform 0.3s ease;
+
+            /* Diseño responsivo */
+
+            @include m.tablet {
+                width: 30%;
+                height: 15vh;
+            }
+
+            @include m.telefono {
+                display: none;
+            }
 
             img {
                 width: 100%;

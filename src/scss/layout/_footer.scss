@@ -1,105 +1,121 @@
 @use 'base/variables' as v;
+@use 'base/mixins' as m;
 
 .footer {
-  background: rgba(v.$fondoPie, 0.4);
-  color: v.$colorEnlaces;
-  font-family: v.$fuentePrincipal;
-  padding: 2rem 4rem;
-  margin-top: 4rem;
+    background: rgba(v.$fondoPie, 0.4);
+    color: v.$colorEnlaces;
+    font-family: v.$fuentePrincipal;
+    padding: 2rem 2rem;
+    width: 100%;
 
-  /* TOP con logo + redes */
-  .footer-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 2rem;
-
-    .footer-logo {
-      font-size: 1.3rem;
-      font-weight: bold;
-      color: v.$colorEnlaces;
-    }
-
-    .social-icons {
-      display: flex;
-      gap: 1rem;
-
-      a {
+    /* TOP con logo + redes */
+    .footer-top {
         display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
         align-items: center;
-        justify-content: center;
-        transition: all 0.3s ease;
+        margin-bottom: 2rem;
 
-        img {
-          width: 40px;
-          height: 40px;
+        .footer-logo {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: v.$colorEnlaces;
         }
 
-        &:hover img {
-          filter: none;
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.3s ease;
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+
+                &:hover img {
+                    filter: none;
+                }
+            }
         }
-      }
     }
-  }
 
-  /* Columnas */
-  .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 2rem;
+    /* Columnas */
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2rem;
 
-    .footer-column {
-      flex: 1 1 180px;
-      display: flex;
-      flex-direction: column;
+        .footer-column {
+            flex: 1 1 180px;
+            display: flex;
+            flex-direction: column;
 
-      h3 {
-        font-size: 1.2rem;
-        margin-bottom: 0.5rem;
-        color: v.$fondoBtns;
-      }
+            h3 {
+                font-size: 1.2rem;
+                margin-bottom: 0.5rem;
+                color: v.$fondoBtns;
+            }
 
-      ul {
-        list-style: none;
-        padding: 0;
+            ul {
+                list-style: none;
+                padding: 0;
 
-        li {
-          margin-bottom: 0.4rem;
-          font-size: 0.95rem;
-          cursor: pointer;
+                li {
+                    margin-bottom: 0.4rem;
+                    font-size: 0.95rem;
+                    cursor: pointer;
 
-          &:hover {
-            color: v.$fondoBtns;
-          }
+                    &:hover {
+                        color: v.$fondoBtns;
+                    }
+                }
+            }
         }
-      }
     }
-  }
 
-  .customer-service {
-    flex: 1 1 180px;
-  }
-
-  /* Línea separadora */
-  .linea-separadora {
-    border: none;
-    border-top: 1px v.$colorfechas solid;
-    margin: 2rem 0;
-  }
-
-  /* BOTTOM */
-  .footer-bottom {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 1rem;
-
-    p {
-      font-size: 0.8rem;
-      color: v.$colorfechas;
-      max-width: 900px;
+    .customer-service {
+        flex: 1 1 180px;
     }
-  }
+
+    /* Línea separadora */
+    .linea-separadora {
+        border: none;
+        border-top: 1px v.$colorfechas solid;
+        margin: 2rem 0;
+    }
+
+    /* BOTTOM */
+    .footer-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+
+        p {
+            font-size: 0.8rem;
+            color: v.$colorfechas;
+            max-width: 900px;
+        }
+    }
+}
+@include m.telefono {
+    .footer {
+        width: 100%;
+        padding: 1rem;
+        .footer-top {
+            flex-direction: column;
+        }
+        .footer-container {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    }
 }

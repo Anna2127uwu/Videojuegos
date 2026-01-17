@@ -9,10 +9,10 @@ menuHamburguesa.addEventListener('click', () => {
 });
 
 // Hero dinámico con autoplay y clic en cards
-const hero = document.querySelector(".hero");
-const title = document.getElementById("hero-title");
-const desc = document.getElementById("hero-desc");
-const cards = document.querySelectorAll(".card");
+const hero = document.querySelector('.hero');
+const title = document.getElementById('hero-title');
+const desc = document.getElementById('hero-desc');
+const cards = document.querySelectorAll('.card');
 
 let index = 0;
 const changeHero = (card) => {
@@ -23,7 +23,7 @@ const changeHero = (card) => {
 
 // Cambiar con clic
 cards.forEach((card, i) => {
-    card.addEventListener("click", () => {
+    card.addEventListener('click', () => {
         index = i;
         changeHero(card);
     });
@@ -33,7 +33,7 @@ cards.forEach((card, i) => {
 setInterval(() => {
     index = (index + 1) % cards.length;
     changeHero(cards[index]);
-    }, 5000);
+}, 5000);
 
 // Inicial
 changeHero(cards[0]);
@@ -45,26 +45,28 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function obtenerJson() {
-    fetch('data/videojuegos.json')
-        .then(responde => responde.json())
-        .then(videojuegos => {
-        todosLosVideojuegos = videojuegos;
-        mostrarVideojuegos(videojuegos, 'catalogoPrincipal');
-        document.querySelectorAll('.btn-catalogo').forEach(btn => {
-            btn.addEventListener('click', () => {
-            const categoria = btn.dataset.text;
-            console.log("clic boton");
-            filtrarVideojuegos(categoria);
+    fetch('/data/videojuegos.json')
+        .then((responde) => responde.json())
+        .then((videojuegos) => {
+            todosLosVideojuegos = videojuegos;
+            mostrarVideojuegos(videojuegos, 'catalogoPrincipal');
+            document.querySelectorAll('.btn-catalogo').forEach((btn) => {
+                btn.addEventListener('click', () => {
+                    const categoria = btn.dataset.text;
+                    console.log('clic boton');
+                    filtrarVideojuegos(categoria);
+                });
             });
-        });
         })
-        .catch(error => console.error('Error cargando el JSON de videojuegos', error));
+        .catch((error) =>
+            console.error('Error cargando el JSON de videojuegos', error)
+        );
 }
 
 function mostrarVideojuegos(videojuegos, contenedorId) {
     const contenedor = document.getElementById(contenedorId);
-    contenedor.innerHTML = "";
-    videojuegos.forEach(videojuego => {
+    contenedor.innerHTML = '';
+    videojuegos.forEach((videojuego) => {
         const tarjetaVideojuego = crearTarjetaCatalogo(videojuego);
         contenedor.appendChild(tarjetaVideojuego);
     });
@@ -72,12 +74,14 @@ function mostrarVideojuegos(videojuegos, contenedorId) {
 
 function filtrarVideojuegos(categoria) {
     const contenedor = document.getElementById('catalogoPrincipal');
-    contenedor.innerHTML = "";
+    contenedor.innerHTML = '';
     let filtrados;
-    if (categoria === "Todos") {
+    if (categoria === 'Todos') {
         filtrados = todosLosVideojuegos;
     } else {
-        filtrados = todosLosVideojuegos.filter(v => v.categoria === categoria);
+        filtrados = todosLosVideojuegos.filter(
+            (v) => v.categoria === categoria
+        );
     }
     mostrarVideojuegos(filtrados, 'catalogoPrincipal');
 }
@@ -85,7 +89,7 @@ function filtrarVideojuegos(categoria) {
 function crearModal(videojuegos, idmodal) {
     const contenedor_modal = document.getElementById(idmodal);
     const overlay = document.getElementById('modal-cont');
-    contenedor_modal.innerHTML = "";
+    contenedor_modal.innerHTML = '';
 
     const contenedor_cierre = document.createElement('span');
     contenedor_cierre.innerHTML = `
@@ -95,14 +99,14 @@ function crearModal(videojuegos, idmodal) {
     `;
 
     contenedor_cierre.addEventListener('click', () => {
-        overlay.style.display = "none";
-        contenedor_modal.innerHTML = "";
+        overlay.style.display = 'none';
+        contenedor_modal.innerHTML = '';
     });
 
     overlay.addEventListener('click', (e) => {
         if (e.target === overlay) {
-        overlay.style.display = "none";
-        contenedor_modal.innerHTML = "";
+            overlay.style.display = 'none';
+            contenedor_modal.innerHTML = '';
         }
     });
 
@@ -129,9 +133,9 @@ function crearModal(videojuegos, idmodal) {
 
     contenedor_modal.append(contenedor_cierre);
     contenedor_modal.append(contenedor_info);
-    }
+}
 
-    function crearTarjetaCatalogo(videojuegos) {
+function crearTarjetaCatalogo(videojuegos) {
     const tarjeta = document.createElement('div');
     tarjeta.classList.add('card-catalogo');
 
@@ -159,14 +163,14 @@ function crearModal(videojuegos, idmodal) {
 
     cont_img.addEventListener('click', () => {
         const modal = document.getElementById('modal-cont');
-        console.log("doy clicl");
+        console.log('doy clicl');
         modal.style.display = 'flex';
         crearModal(videojuegos, 'modal');
     });
 
     const con_etiq = document.createElement('div');
     con_etiq.classList.add('cont-etiquetas');
-    videojuegos.Plataformas.forEach(etq => {
+    videojuegos.Plataformas.forEach((etq) => {
         const divEtiqueta = document.createElement('div');
         divEtiqueta.textContent = etq;
         con_etiq.appendChild(divEtiqueta);
@@ -174,24 +178,29 @@ function crearModal(videojuegos, idmodal) {
 
     tarjeta.appendChild(con_etiq);
     return tarjeta;
-    }
+}
 
-    function obtenerJsonNoticias() {
-    fetch('data/noticias.json')
-        .then(responde => responde.json())
-        .then(noticias => {
-        todasLasNoticias = noticias;
-        noticias.sort((a, b) => new Date(b.fecha) - new Date(a.fecha));
-        console.log("ordene las noticias");
-        mostrarNoticiasPrincipales(noticias.slice(0, 2), 'cont-noticias-prin');
-        mostrarNoticiasMini(noticias.slice(2), 'cont-noticias-mini');
+function obtenerJsonNoticias() {
+    fetch('/data/noticias.json')
+        .then((responde) => responde.json())
+        .then((noticias) => {
+            todasLasNoticias = noticias;
+            noticias.sort((a, b) => new Date(b.fecha) - new Date(a.fecha));
+            console.log('ordene las noticias');
+            mostrarNoticiasPrincipales(
+                noticias.slice(0, 2),
+                'cont-noticias-prin'
+            );
+            mostrarNoticiasMini(noticias.slice(2), 'cont-noticias-mini');
         })
-        .catch(error => console.error('Error cargando el JSON de noticias', error));
-    }
+        .catch((error) =>
+            console.error('Error cargando el JSON de noticias', error)
+        );
+}
 
-    function mostrarNoticiasPrincipales(noticias, contenedorId) {
+function mostrarNoticiasPrincipales(noticias, contenedorId) {
     const contenedor = document.getElementById(contenedorId);
-    noticias.forEach(noticia => {
+    noticias.forEach((noticia) => {
         const article = document.createElement('article');
         article.classList.add('noticia');
         article.innerHTML = `
@@ -208,11 +217,11 @@ function crearModal(videojuegos, idmodal) {
         `;
         contenedor.appendChild(article);
     });
-    }
+}
 
-    function mostrarNoticiasMini(noticias, contenedorId) {
+function mostrarNoticiasMini(noticias, contenedorId) {
     const contenedor = document.getElementById(contenedorId);
-    noticias.forEach(noticia => {
+    noticias.forEach((noticia) => {
         const divmini = document.createElement('div');
         divmini.classList.add('noticia-mini');
         divmini.innerHTML = `
@@ -231,22 +240,23 @@ function crearModal(videojuegos, idmodal) {
         `;
         contenedor.appendChild(divmini);
     });
-    }
+}
 
-
-    function obtenerJsonCategorias() {
-    fetch('data/categoria.json')
-        .then(res => res.json())
-        .then(categorias => {
-        mostrarCategorias(categorias);
+function obtenerJsonCategorias() {
+    fetch('/data/categoria.json')
+        .then((res) => res.json())
+        .then((categorias) => {
+            mostrarCategorias(categorias);
         })
-        .catch(error => console.error('Error cargando JSON de categorías', error));
+        .catch((error) =>
+            console.error('Error cargando JSON de categorías', error)
+        );
 }
 
 function mostrarCategorias(categorias) {
     const pantalla = document.querySelector('.cont-pantalla img');
     const contInfo = document.querySelector('.cont-info');
-    
+
     let indice = 0;
 
     function actualizarCategoria() {
@@ -278,4 +288,3 @@ function mostrarCategorias(categorias) {
         actualizarCategoria();
     });
 }
-

@@ -1,5 +1,6 @@
-@use "sass:color";
+@use 'sass:color';
 @use 'base/variables' as v;
+@use 'base/mixins' as m;
 
 .modal-overlay {
     position: fixed;
@@ -9,7 +10,7 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.85);
     backdrop-filter: blur(6px);
-    display: none; 
+    display: none;
     // se muestra con display:flex desde JS
     align-items: center;
     justify-content: center;
@@ -28,112 +29,146 @@
         animation: aparecer 0.3s ease forwards;
 
         @keyframes aparecer {
-        from {
-            transform: scale(0.9);
-            opacity: 0;
-        }
-        to {
-            transform: scale(1);
-            opacity: 1;
-        }
+            from {
+                transform: scale(0.9);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
         }
 
         // Botón de cierre (ícono X)
         span {
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        z-index: 10;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            z-index: 10;
 
-        svg {
-            width: 30px;
-            height: 30px;
-            cursor: pointer;
-            color: white;
-            transition: color 0.2s ease, transform 0.2s ease;
+            svg {
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+                color: white;
+                transition: color 0.2s ease, transform 0.2s ease;
 
-            &:hover {
-            color: v.$fondoHero;
-            transform: rotate(90deg);
+                &:hover {
+                    color: v.$fondoHero;
+                    transform: rotate(90deg);
+                }
             }
-        }
         }
 
         .cont-modal {
-        width: 90%;
-        padding: 2rem;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        .info-fila {
+            width: 90%;
+            padding: 2rem;
+            margin: auto;
             display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: flex-start;
-            gap: 2rem;
-            width: 100%;
-            margin-bottom: 2rem;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
 
-            .info-trailer {
-            flex: 1 1 55%;
-            min-width: 300px;
-
-            iframe {
+            .info-fila {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: flex-start;
+                gap: 2rem;
                 width: 100%;
-                height: 300px;
-                border-radius: 12px;
-                border: none;
-                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
-            }
+                margin-bottom: 2rem;
+
+                .info-trailer {
+                    flex: 1 1 55%;
+                    min-width: 300px;
+
+                    iframe {
+                        width: 100%;
+                        height: 300px;
+                        border-radius: 12px;
+                        border: none;
+                        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+                    }
+                }
+
+                .info-videojuego {
+                    flex: 1 1 40%;
+                    color: white;
+                    text-align: left;
+
+                    h2 {
+                        font-size: 2rem;
+                        margin-bottom: 0.5rem;
+                        color: v.$fondoHero;
+                    }
+
+                    p {
+                        font-size: 1.2rem;
+                        line-height: 1.4;
+                        margin-bottom: 0.5rem;
+                        color: color.adjust(white, $lightness: 10%);
+                    }
+                }
             }
 
-            .info-videojuego {
-            flex: 1 1 40%;
-            color: white;
-            text-align: left;
-
-            h2 {
-                font-size: 2rem;
-                margin-bottom: 0.5rem;
-                color: v.$fondoHero;
-            }
-
-            p {
-                font-size: 1.2rem;
-                line-height: 1.4;
-                margin-bottom: 0.5rem;
-                color: color.adjust(white, $lightness: 10%);
-            }
-            }
-        }
-
-        .info-column {
-            width: 100%;
-            text-align: center;
-
-            .info-sinopsis {
-            p {
-                font-size: 1.5rem;
-                color: white;
+            .info-column {
+                width: 100%;
                 text-align: center;
-                line-height: 1.5;
-                margin-top: 1rem;
+
+                .info-sinopsis {
+                    p {
+                        font-size: 1.3rem;
+                        color: white;
+                        text-align: center;
+                        line-height: 1.4;
+                        margin-top: 1rem;
+                    }
+                }
             }
-            }
-        }
         }
 
         // Scroll estilizado
         &::-webkit-scrollbar {
-        width: 8px;
+            width: 8px;
         }
 
         &::-webkit-scrollbar-thumb {
-        background: v.$fondoHero;
-        border-radius: 10px;
+            background: v.$fondoHero;
+            border-radius: 10px;
+        }
+    }
+}
+
+@include m.telefono {
+    .modal-overlay {
+        .modal {
+            width: 90%;
+            flex-direction: column;
+
+            .cont-modal {
+                .info-fila {
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 0.5rem;
+                    .info-trailer {
+                        margin-top: 1.2rem;
+                        min-width: 0 !important;
+                    }
+                    .info-trailer,
+                    .info-videojuego {
+                        width: 100%;
+                        max-width: 100%;
+                    }
+                }
+                .info-column {
+                    .info-sinopsis {
+                        p {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
         }
     }
 }

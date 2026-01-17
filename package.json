@@ -1,31 +1,33 @@
 {
-  "name": "videojuegos",
-  "version": "1.0.0",
-  "description": "Pagina de videojuegos",
-  "type": "module",
-  "main": "index.js",
-  "scripts": {
-    "sass": "sass src/scss:dist/css",
-    "dev": "gulp dev"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Anna2127uwu/Videojuegos.git"
-  },
-  "keywords": [
-    "SASS",
-    "NMP",
-    "Gulp"
-  ],
-  "author": "Anna Paulina Y Eduardo Piña",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Anna2127uwu/Videojuegos/issues"
-  },
-  "homepage": "https://github.com/Anna2127uwu/Videojuegos#readme",
-  "devDependencies": {
-    "gulp": "^5.0.1",
-    "gulp-sass": "^6.0.1",
-    "sass": "^1.89.2"
-  }
+    "name": "videojuegos",
+    "version": "1.0.0",
+    "description": "Pagina de videojuegos",
+    "type": "module",
+    "main": "index.js",
+    "scripts": {
+        "sass": "sass src/scss:dist/css",
+        "dev": "gulp",
+        "build": "gulp build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Anna2127uwu/Videojuegos.git"
+    },
+    "keywords": [
+        "SASS",
+        "NMP",
+        "Gulp"
+    ],
+    "author": "Anna Paulina Y Eduardo Piña",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Anna2127uwu/Videojuegos/issues"
+    },
+    "homepage": "https://github.com/Anna2127uwu/Videojuegos#readme",
+    "devDependencies": {
+        "browser-sync": "^3.0.4",
+        "gulp": "^5.0.1",
+        "gulp-sass": "^6.0.1",
+        "sass": "^1.89.2"
+    }
 }

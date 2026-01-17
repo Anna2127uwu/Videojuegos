@@ -3,14 +3,14 @@
 @use 'base/mixins' as m;
 
 .menu {
-    width: 100%;
+    width: 92%;
     background: linear-gradient(90deg, #141414, #1f1f1f);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     padding: 1rem 2rem;
-    margin: 0;
+    margin: auto;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     position: sticky;
@@ -91,27 +91,30 @@
 
     /*Diseño responsivo */
     @include m.telefono {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 1rem;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.8rem 1.2rem;
+        .menu-logo {
+            justify-content: center;
+            align-items: center;
+        }
 
         .menu-hamburguesa {
-            display: block;
-            align-self: flex-end;
-            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .menu-links {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
             display: none;
             flex-direction: column;
-            width: 100%;
-            background: color.adjust(v.$efectoSecciones, $lightness: -5%);
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-            padding: 1rem 0;
-            gap: 1rem;
-            overflow: hidden;
-            transition: all 0.4s ease-in-out;
+            background: linear-gradient(90deg, #141414, #1f1f1f);
+            border-radius: 0 0 15px 15px;
 
             &.show {
                 display: flex;

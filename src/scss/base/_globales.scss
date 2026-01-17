@@ -1,9 +1,14 @@
 @use 'variables' as v;
-a{
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+a {
     text-decoration: none;
     font-family: v.$fuentePrincipal;
 }
-p{
+p {
     color: v.$colorEnlaces;
     font-size: 20px;
     font-family: v.$fuentePrincipal;
@@ -11,72 +16,132 @@ p{
 
 /* Estilos base de botones */
 .btn {
-  font-size: 16px;
-  border-radius: 10px;
-  padding: 12px 16px;
-  text-align: center;
-  font-weight: 600;
-  cursor: pointer;
-  background-color: v.$fondoBtns;
-  color: v.$colorEnlaces;
-  font-family: v.$fuentePrincipal;
-  position: relative;
-  overflow: hidden;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 12px 16px;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: v.$fondoBtns;
+    color: v.$colorEnlaces;
+    font-family: v.$fuentePrincipal;
+    position: relative;
+    overflow: hidden;
 }
 
 /* Capas glitch (inicialmente desactivadas) */
 .btn::before,
 .btn::after {
-  content: attr(data-text);
-  position: absolute;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  background: transparent;
-  clip-path: inset(0 0 0 0);
-  opacity: 0; /* oculto por defecto */
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    background: transparent;
+    clip-path: inset(0 0 0 0);
+    opacity: 0; /* oculto por defecto */
 }
 
 /* Colores glitch */
-.btn::before { color: #ff00c8; }
-.btn::after { color: #00fff9; }
+.btn::before {
+    color: #ff00c8;
+}
+.btn::after {
+    color: #00fff9;
+}
 
 /* Cuando pasas el mouse */
 .btn:hover::before {
-  opacity: 1;
-  animation: shimmy-text 2s infinite linear alternate-reverse;
+    opacity: 1;
+    animation: shimmy-text 2s infinite linear alternate-reverse;
 }
 .btn:hover::after {
-  opacity: 1;
-  animation: shimmy-text 2s infinite linear;
+    opacity: 1;
+    animation: shimmy-text 2s infinite linear;
 }
 
 /* Animación glitch */
 @keyframes shimmy-text {
-  0% { clip-path: inset(2% 0 95% 0); }
-  2%, 8% { clip-path: inset(78% 0 0 0); transform: translate(-2%, 0); }
-  6% { clip-path: inset(78% 0 0 0); transform: translate(2%, 0); }
-  9% { clip-path: inset(78% 0 0 0); transform: translate(0, 0); }
-  10% { clip-path: inset(44% 0 46% 0); transform: translate(2%, 0); }
-  13% { clip-path: inset(44% 0 46% 0); transform: translate(0, 0); }
-  14%, 21% { clip-path: inset(0 0 100% 0); transform: translate(2%, 0); }
-  15%, 20% { clip-path: inset(40% 0 60% 0); transform: translate(2%, 0); }
-  25% { clip-path: inset(40% 0 15% 0); transform: translate(2%, 0); }
-  30% { clip-path: inset(40% 0 15% 0); transform: translate(-2%, 0); }
-  35%, 45% { clip-path: inset(63% 0 20% 0); transform: translate(-2%, 0); }
-  40% { clip-path: inset(63% 0 20% 0); transform: translate(2%, 0); }
-  50% { clip-path: inset(63% 0 20% 0); transform: translate(0, 0); }
-  55% { clip-path: inset(0 0 90% 0); transform: translate(2%, 0); }
-  60% { clip-path: inset(0 0 90% 0); transform: translate(0, 0); }
-  31%, 61%, 100% { clip-path: inset(0 0 100% 0); }
+    0% {
+        clip-path: inset(2% 0 95% 0);
+    }
+    2%,
+    8% {
+        clip-path: inset(78% 0 0 0);
+        transform: translate(-2%, 0);
+    }
+    6% {
+        clip-path: inset(78% 0 0 0);
+        transform: translate(2%, 0);
+    }
+    9% {
+        clip-path: inset(78% 0 0 0);
+        transform: translate(0, 0);
+    }
+    10% {
+        clip-path: inset(44% 0 46% 0);
+        transform: translate(2%, 0);
+    }
+    13% {
+        clip-path: inset(44% 0 46% 0);
+        transform: translate(0, 0);
+    }
+    14%,
+    21% {
+        clip-path: inset(0 0 100% 0);
+        transform: translate(2%, 0);
+    }
+    15%,
+    20% {
+        clip-path: inset(40% 0 60% 0);
+        transform: translate(2%, 0);
+    }
+    25% {
+        clip-path: inset(40% 0 15% 0);
+        transform: translate(2%, 0);
+    }
+    30% {
+        clip-path: inset(40% 0 15% 0);
+        transform: translate(-2%, 0);
+    }
+    35%,
+    45% {
+        clip-path: inset(63% 0 20% 0);
+        transform: translate(-2%, 0);
+    }
+    40% {
+        clip-path: inset(63% 0 20% 0);
+        transform: translate(2%, 0);
+    }
+    50% {
+        clip-path: inset(63% 0 20% 0);
+        transform: translate(0, 0);
+    }
+    55% {
+        clip-path: inset(0 0 90% 0);
+        transform: translate(2%, 0);
+    }
+    60% {
+        clip-path: inset(0 0 90% 0);
+        transform: translate(0, 0);
+    }
+    31%,
+    61%,
+    100% {
+        clip-path: inset(0 0 100% 0);
+    }
 }
 
-
-body{
+body {
     background: v.$fondo;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: v.$colorEnlaces;
     font-family: v.$fuenteSubtitulos;
 }
